@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WhiteText">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/GreenUI"
+                    android:minHeight="?android:attr/windowTitleSize"
+                    android:theme="?attr/actionBarTheme" />
+
+                <TextView
+                    android:id="@+id/guideText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginRight="141dp"
+                    android:gravity="center"
+                    android:text="@string/guide"
+                    android:textColor="@color/WhiteText"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toStartOf="@+id/guideText3"
+                    android:layout_toLeftOf="@+id/guideText3"
+                    android:contentDescription="@string/icon_guide"
+                    app:srcCompat="@drawable/ic_guide_dark" />
+
+                <ImageButton
+                    android:id="@+id/ReturnButton8"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/return_arrow"
+                    app:srcCompat="@drawable/ic_return" />
+
+
+            </RelativeLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageGuide"
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/guide1"
+                />
+            <TextView
+                android:id="@+id/NomArea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|top"
+                android:text="Jean Boris"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Agregation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agrégation : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/Association"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Association : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/DescriptionArea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spécialités : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/ZonesPred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zones de prédilection : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/Specialités"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zones de prédilection : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/CategorieArea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Langues : Français, anglais"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grade : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mail : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/Tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tel : RN7, Allée des Baobabs"
+                android:gravity="center|top"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

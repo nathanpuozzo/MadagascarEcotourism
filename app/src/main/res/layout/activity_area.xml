@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WhiteText">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/GreenUI"
+                    android:minHeight="?android:attr/windowTitleSize"
+                    android:theme="?attr/actionBarTheme" />
+
+                <TextView
+                    android:id="@+id/guideText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginRight="141dp"
+                    android:gravity="center"
+                    android:text="@string/area"
+                    android:textColor="@color/WhiteText"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toStartOf="@+id/guideText2"
+                    android:layout_toLeftOf="@+id/guideText2"
+                    android:contentDescription="@string/icon_area"
+                    app:srcCompat="@drawable/ic_terrain_24dp" />
+
+                <ImageButton
+                    android:id="@+id/ReturnButton3"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="@string/return_arrow"
+                    app:srcCompat="@drawable/ic_return" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/imageArea"
+                android:layout_width="match_parent"
+                android:layout_height="700px"
+                app:srcCompat="@drawable/area1"
+                android:layout_marginTop="-5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/NomArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|top"
+                android:text="Baie de Ranobe"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/DescriptionArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description de la Baie de Ranobe : Paysages harmonieux"
+                android:gravity="center|top"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/CategorieArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Aire protégée marine"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="En savoir plus"
+                android:id="@+id/LienArea"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

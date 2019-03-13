@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/GreenUI"
+        android:minHeight="?android:attr/windowTitleSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/guideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        android:gravity="center"
+        android:text="@string/hotel"
+        android:textColor="@color/WhiteText"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toStartOf="@+id/guideText"
+        android:layout_toLeftOf="@+id/guideText"
+        android:contentDescription="@string/icon_hotel"
+        app:srcCompat="@drawable/ic_hotel_dark" />
+
+    <ImageButton
+        android:id="@+id/ReturnButton2"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/return_arrow"
+        app:srcCompat="@drawable/ic_return" />
+
+
+</RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageHotel"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        app:srcCompat="@drawable/hotel01"
+        android:layout_marginTop="-5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/NomHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center|top"
+        android:text="Hôtel Hyppocampo"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/DescriptionHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sur la route du port, dans un quartier un peu éloigné à l'écart du centre-ville, cet établissement de charme qui se distingue par son architecture moderne à charpente métallique compte également les plus confrotables de la ville.
+La piscine et l'atmosphère chic et décontractée du bar-restaurant donnent le ton de cette adresse, qui ne compte que 8 chambres et 3 suites, décorées de boiserie, sculptures et beaux voilages, avec clim et TV par satellite.
+Cartes VISA et Mastercard acceptées. "
+        android:gravity="center|top"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/prixNuit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Prix d'une nuitée : entre 40,5 - 57€"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft">
+
+        </ExpandableListView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

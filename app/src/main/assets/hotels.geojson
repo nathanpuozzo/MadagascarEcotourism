@@ -1,0 +1,5399 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "lat": -18.908278,
+        "lon": 47.521234,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Le Sakamanga",
+        "adresse": "Lot IBK7bis, Lalana Adrianary Ratianarivo, Ampasamadinika, Antananarivo 101",
+        "tel": "020-22-358-09, 032-02-668-34",
+        "email": "_",
+        "site web": "http://www.sakamanga.com",
+        "prix": "20 - 100 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d735884-Reviews-Hotel_Sakamanga-Antananarivo_Antananarivo_Province.html",
+        "booking": "https://www.booking.com/hotel/mg/sakamanga.fr.html?aid=376366"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.521234,
+          -18.908278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "lat": -18.911664,
+        "lon": 47.520962,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Residence Lapasoa",
+        "adresse": "15, rue de la Reunion, Isoraka, Antananarivo 101",
+        "tel": "020-22-611-40, 032-07-611-40",
+        "email": "_",
+        "site web": "http://www.lapasoa.com",
+        "prix": "45 -70€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d303053-Reviews-Residence_Lapasoa-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.520962,
+          -18.911664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "lat": -18.911901,
+        "lon": 47.520939,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Rova Hotel",
+        "adresse": "Rue Dok Villette, Antananarivo 101",
+        "tel": "020-22-292-77, 032-11-297-77",
+        "email": "_",
+        "site web": "http://www.rovahotel.com",
+        "prix": "30 - 40€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1508616-Reviews-Rova_Hotel-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.520939,
+          -18.911901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "lat": -18.91285,
+        "lon": 47.527351,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Maison des Cotonniers",
+        "adresse": "Rue Lalana Ranavalona III, Ambatonakanga 101, Antanarivo 101",
+        "tel": "020-22-209-54",
+        "email": "_",
+        "site web": "http://www.andilanahotels.com",
+        "prix": "23 - 81€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d9763832-Reviews-Hotel_Maison_des_Cotonniers-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.527351,
+          -18.91285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "lat": -18.909737,
+        "lon": 47.526407,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "La Ribaudiere",
+        "adresse": "Lalana Paul Dussac, Antananarivo",
+        "tel": "020-24-215-25, 032-02-411-51",
+        "email": "_",
+        "site web": "http://www.hotel_laribaudiere.com",
+        "prix": " 22,5 - 34€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d672338-Reviews-Hotel_La_Ribaudiere-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.526407,
+          -18.909737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "lat": -18.907783,
+        "lon": 47.522223,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Palm Hotel",
+        "adresse": "Lalana Adrianary Ratianarivo, Antananarivo 101",
+        "tel": "020-22-253-73, 032-05-536-80",
+        "email": "_",
+        "site web": "http://www.hotelantananarivo.com",
+        "prix": "24,5 - 49,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d666155-Reviews-Palm_Hotel-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.522223,
+          -18.907783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "lat": -18.881556,
+        "lon": 47.50937,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Hotel de France",
+        "adresse": "34, Avenue de l'Independance Analakely, Antananarivo 101",
+        "tel": "020-22-213-04",
+        "email": "contact@siceh_hotels.com",
+        "site web": "_",
+        "prix": "30 -  43€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1961136-Reviews-Hotel_de_France-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.50937,
+          -18.881556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "lat": -18.906783,
+        "lon": 47.522531,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Le Grand Mellis",
+        "adresse": "Lalana Indira Gandhi, Antananarivo 101",
+        "tel": "020-22-234-25, 033-15-234-25",
+        "email": "_",
+        "site web": "http://www.hotel_mellis.com",
+        "prix": "45 - 90,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1584798-Reviews-Le_Grand_Mellis_Hotel_Spa-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.522531,
+          -18.906783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "lat": -18.928539,
+        "lon": 47.534466,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Lokanga",
+        "adresse": "Lokanga Boutique Hotel, lot VW 115 Ambohimitsimbina, Antananarivo 101",
+        "tel": "020-22-235-49, 034-14-555-02",
+        "email": "_",
+        "site web": "http://www.lokanga_hotel.mg",
+        "prix": "90 - 120€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d2260947-Reviews-Lokanga_Boutique_Hotel-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.534466,
+          -18.928539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "lat": -18.911875,
+        "lon": 47.52504,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "La Varangue",
+        "adresse": "Lalana Printsy Ratsimamanga, Ambohidahy, Antananarivo 101",
+        "tel": "020-22-273-97, 032-05-273-97",
+        "email": "_",
+        "site web": "http://www.hotel_restaurant_lavarangue_tananarive.com",
+        "prix": "80 - 180€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d2260947-Reviews-Lokanga_Boutique_Hotel-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52504,
+          -18.911875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "lat": -18.912743,
+        "lon": 47.520434,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Le Pavillion de l'Emyrne",
+        "adresse": "12, Rue Stanislas Rakotonirina, Isoraka, Antananarivo 101",
+        "tel": "020-22-259-45, 020-22-259-46",
+        "email": "_",
+        "site web": "http://www.pavilliondelemmyrne.com",
+        "prix": "65 - 105€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1186003-Reviews-Le_Pavillon_de_l_Emyrne-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.520434,
+          -18.912743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "lat": -18.910342,
+        "lon": 47.524128,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Tana Hotel",
+        "adresse": "4 Rue Rabehevitra Immeuble Fumaroli, Antananarivo 101",
+        "tel": "020-22-313-20, 020-22-313-26",
+        "email": "_",
+        "site web": "http://www.tana_hotel_madagascar.com",
+        "prix": "104 - 149€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d609858-Reviews-Tana_Jacaranda-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.524128,
+          -18.910342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "lat": -18.910275,
+        "lon": 47.524896,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Le Louvre Hotel & Spa",
+        "adresse": "Jardin Antaninarenina, Antananarivo 101",
+        "tel": "020-22-390-00, 032-05-390-00",
+        "email": "_",
+        "site web": "http://www.hotel_du_louvre.com",
+        "prix": "105 - 290€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d638463-Reviews-Le_Louvre_Hotel_Spa-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.524896,
+          -18.910275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "lat": -18.907596,
+        "lon": 47.528048,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Palissandre Hotel & Spa",
+        "adresse": "12 Lalana Andriandahifotsy, Antananarivo 101",
+        "tel": "020-22-605-60",
+        "email": "_",
+        "site web": "http://www.hotel_palissandre.com",
+        "prix": "135 - 195€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d477790-Reviews-Hotel_Spa_Palissandre-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.528048,
+          -18.907596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "lat": -18.91101,
+        "lon": 47.525434,
+        "region": "Antananarivo",
+        "description":"-",
+        "ville": "ANTANANARIVO",
+        "hotel": "Hotel Colbert",
+        "adresse": "Lalana Printsy Ratsimamanga, Antananarivo 101",
+        "tel": "020-22-202-02",
+        "email": "_",
+        "site web": "http://www.hotel_restaurant_colbert.com",
+        "prix": "100 - 370€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d303051-Reviews-L_Hotel_Colbert_Spa_Casino-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.525434,
+          -18.91101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "lat": -18.807321,
+        "lon": 47.481061,
+        "region": "Vers le Nord",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Le Manoir Rouge",
+        "adresse": "Lot K IV 023, Lalana Dok. Joseph Raseta, Antananarivo 101",
+        "tel": "032-05-260-97",
+        "email": "manoirrouge@gmail.com",
+        "site web": "_",
+        "prix": " 11,25 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1474515-Reviews-Hotel_Manoir_Rouge-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.481061,
+          -18.807321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "lat": -18.821142,
+        "lon": 47.465452,
+        "region": "Vers le Nord",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Au Mirandav",
+        "adresse": "Lalana Dok. Joseph Raseta, Antananarivo 105",
+        "tel": "022-22-459-16, 033-12-062-57, 034 22 459 16",
+        "email": "_",
+        "site web": "http://www.madade_couverte.com,aumirandav",
+        "prix": " 10 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d4878376-Reviews-Hotel_Au_Mirandav-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.465452,
+          -18.821142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "lat": -18.819684,
+        "lon": 47.466727,
+        "region": "Vers le Nord",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "La terrasse de Tydouce",
+        "adresse": "Lalana Dok. Joseph Raseta, Antananarivo 105",
+        "tel": "020-24-522-51, 033-11-336-99",
+        "email": "tydouce@freedsl.mg",
+        "site web": "_",
+        "prix": "  17,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.466727,
+          -18.819684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "lat": -18.820015,
+        "lon": 47.466756,
+        "region": "Vers le Nord",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Ivato Hotel",
+        "adresse": "SODIAT Agence a Ivato, Lalana Dok. Joseph Raseta, Antananarivo 105",
+        "tel": "020-22-445-10, 034-22-445-10",
+        "email": "_",
+        "site web": "http://www.ivatohotel.com",
+        "prix": "20 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d7316298-Reviews-Ivato_Hotel-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.466756,
+          -18.820015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "lat": -18.870291,
+        "lon": 47.493277,
+        "region": "Vers le Nord",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Le Combava",
+        "adresse": "Lot IV F 1C Ambodihady Ambohimanarina, Antananarivo 101",
+        "tel": "020-23-584-94, 032-11-584-95",
+        "email": "_",
+        "site web": "http://www.hotel_combava.com",
+        "prix": "72 - 84€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1838656-Reviews-Le_Combava-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.493277,
+          -18.870291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "lat": -18.90932,
+        "lon": 47.524013,
+        "region": "Vers l'Est",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Le Chalet des Roses",
+        "adresse": "Lalana Rainitovo, Antananarivo",
+        "tel": "020-42-660-95, 034-61-398-20",
+        "email": "lechaletmantasoa@gmail.com",
+        "site web": "_",
+        "prix": " 22,5 - 34€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g293809-d1200041-Reviews-Chalet_des_Roses-Antananarivo_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.524013,
+          -18.90932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 22,
+        "lat": -18.997942,
+        "lon": 47.858209,
+        "region": "Vers l'Est",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "L'Hermitage Mantasoa",
+        "adresse": "BP 16 Mantasoa, Mantasoa, Antananarivo 106",
+        "tel": "020-42-660-54, 034-04-960-64, 033 14 664 39",
+        "email": "_",
+        "site web": "_",
+        "prix": "40 - 55€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.858209,
+          -18.997942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 23,
+        "lat": -18.998058,
+        "lon": 47.874385,
+        "region": "Vers l'Est",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Mantasoa Lodge",
+        "adresse": "Route vers le Riverside, Antananarivo 106",
+        "tel": "020-42-660-85, 034-10-087-23",
+        "email": "_",
+        "site web": "http://www.mantasoa_lodge.com",
+        "prix": "30 - 38€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g12994591-d2651335-Reviews-Mantasoa_Lodge-Mantasoa_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.874385,
+          -18.998058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 24,
+        "lat": -19.378472,
+        "lon": 47.432126,
+        "region": "Vers le Sud",
+        "description":"-",
+        "ville": "ENVIRONS D'ANTANANARIVO",
+        "hotel": "Au Rendez-Vous des P?cheurs",
+        "adresse": "7, Ambatolampy",
+        "tel": "020-42-492-04, 032-05-098-43",
+        "email": "_",
+        "site web": "_",
+        "prix": " 7,75 - 10,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Restaurant_Review-g4579621-d7024113-Reviews-Au_Rendez_Vous_des_Pecheurs-Ambatolampy_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.432126,
+          -19.378472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 25,
+        "lat": -19.859731,
+        "lon": 47.033805,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Villa Salemako",
+        "adresse": "RN7",
+        "tel": "032-40-317-17",
+        "email": "salemakojulia1@yahoo.fr",
+        "site web": "_",
+        "prix": " 7,5 - 15€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.033805,
+          -19.859731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 26,
+        "lat": -19.867965,
+        "lon": 47.035334,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Hasina",
+        "adresse": "Avenue Jean Ralaimongo",
+        "tel": "020-44-485-56",
+        "email": "hotelhasina@moov.mg",
+        "site web": "_",
+        "prix": " 8,37 - 11€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d1889050-Reviews-Hotel_Hasina-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.035334,
+          -19.867965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 27,
+        "lat": -19.869655,
+        "lon": 47.036757,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Green Park Hotel",
+        "adresse": "Lot 0512 G 08 Tsarasaotra, Antsirabe",
+        "tel": "020-44-051-90, 034-08-725-13",
+        "email": "greenparktsara@yahoo.fr",
+        "site web": "_",
+        "prix": " 10 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.036757,
+          -19.869655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 28,
+        "lat": -19.854008,
+        "lon": 47.032159,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La Residence Sociale d'Antsirabe",
+        "adresse": "Antsirabe",
+        "tel": "020-44-483-47",
+        "email": "_",
+        "site web": "http://www.residence_sociale_antsirabe.com",
+        "prix": "25 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d2239350-Reviews-La_Residence_sociale-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.032159,
+          -19.854008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 29,
+        "lat": -19.876485,
+        "lon": 47.042943,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Couleur Cafe",
+        "adresse": "110, Rue d'Ambositra, Antsirabe ",
+        "tel": "032-02-200-65",
+        "email": "_",
+        "site web": "http://www.couleurcafeantsirabe.com",
+        "prix": " 31,25 - 44€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d1748214-Reviews-Couleur_Cafe-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.042943,
+          -19.876485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 30,
+        "lat": -19.872913,
+        "lon": 47.02944,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Les Chambres des Voyageurs",
+        "adresse": "rte circulaire derriere la gare, Antsirabe 201",
+        "tel": "032-40-866-22 , 032-83-083-61",
+        "email": "_",
+        "site web": "http://www.chambres_voyageur.mg",
+        "prix": " 27,5 - 32,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d1141669-Reviews-Eco_Lodge_Les_Chambres_du_Voyageur-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.02944,
+          -19.872913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 31,
+        "lat": -19.864171,
+        "lon": 47.033919,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Trianon",
+        "adresse": "Nationale 7 En face Cercle-Mess, Antsirabe 110",
+        "tel": "020-44-051-40, 034-05-051-40",
+        "email": "_",
+        "site web": "http://www.hotel_letrianon_antsirabe.com",
+        "prix": " 16,5 - 22,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d1601511-Reviews-Le_Trianon-Antsirabe_Antananarivo_Province.html",
+        "booking": "https://www.booking.com/hotel/mg/le-trianon.fr.html?aid=7344301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.033919,
+          -19.864171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 32,
+        "lat": -19.859055,
+        "lon": 47.033197,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Vatolahy",
+        "adresse": "27H10 Rue fonk Mahazoarivo sud, Antsirabe",
+        "tel": "020-44-937-77, 034-11-937-77",
+        "email": "hotalvatolahy@hotmail.fr",
+        "site web": "_",
+        "prix": " 18,37 - 27,37€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d2207432-Reviews-Vatolahy_Hotel-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.033197,
+          -19.859055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 33,
+        "lat": -19.837565,
+        "lon": 47.042639,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Soa Guest House",
+        "adresse": "Antsirabe 102",
+        "tel": "032-02-279-90 , 033-15-279-90",
+        "email": "_",
+        "site web": "http://www.soaguesthouse.com",
+        "prix": "15 - 23€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d1234943-Reviews-Soa_Guest_House-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.042639,
+          -19.837565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 34,
+        "lat": -19.86646,
+        "lon": 47.032825,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel des Thermes",
+        "adresse": "Grande Avenue, Antsirabe",
+        "tel": "020-44-487-62, 034-65-487-61",
+        "email": "_",
+        "site web": "http://www.sofitranssa.com",
+        "prix": "25 - 53€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d650439-Reviews-Hotel_des_Thermes-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.032825,
+          -19.86646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 35,
+        "lat": -19.863824,
+        "lon": 47.037121,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Plumeria Hotel",
+        "adresse": "Grande Avenue, Antsirabe",
+        "tel": "020-44-488-91, 034-44-488-91",
+        "email": "_",
+        "site web": "http://www.plumeriahotelantsirabe.com",
+        "prix": " 37,5 - 53€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d11700234-Reviews-Plumeria_Hotel-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.037121,
+          -19.863824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 36,
+        "lat": -19.865026,
+        "lon": 47.036549,
+        "region": "Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Flower Palace Hotel",
+        "adresse": "Rue Joffre, Antsirabe",
+        "tel": "033-25-013-14 , 034-14-870-01",
+        "email": "flowerpalace@hotmail.fr",
+        "site web": "_",
+        "prix": "31 - 40€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316107-d3250503-Reviews-Flower_Palace_Hotel_Antsirabe-Antsirabe_Antananarivo_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.036549,
+          -19.865026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 37,
+        "lat": -19.872195,
+        "lon": 46.976989,
+        "region": "Environs d'Antsirabe",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Laza",
+        "adresse": "Antsirabe II",
+        "tel": "020-44-957-99, 033-13-103-71",
+        "email": "_",
+        "site web": "http://www.hotellaza.com",
+        "prix": "10 - 14€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.976989,
+          -19.872195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 38,
+        "lat": -20.531913,
+        "lon": 47.243321,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Grand Hotel",
+        "adresse": "Rue De Commerce, Ambositra",
+        "tel": "020-47-712-62 , 034-47-712-62",
+        "email": "_",
+        "site web": "http://www.grand_hotel_ambositra.com",
+        "prix": " 3.75 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d10438800-Reviews-Grand_Hotel_Ambositra-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.243321,
+          -20.531913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 39,
+        "lat": -20.530716,
+        "lon": 47.246799,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Mania",
+        "adresse": "RN7, Ambositra",
+        "tel": "47-710-21, 033-15-005-13",
+        "email": "toursmania@moov.mg",
+        "site web": "_",
+        "prix": " 10,25 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.246799,
+          -20.530716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 40,
+        "lat": -20.528394,
+        "lon": 47.244828,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Artisan Hotel",
+        "adresse": "Ambositra",
+        "tel": "034-04-642-53 , 033-04-566-97",
+        "email": "artisan_hotel@yahoo.fr",
+        "site web": "_",
+        "prix": " 12,5 - 23€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d1884540-Reviews-Hotel_Artisan-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.244828,
+          -20.528394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 41,
+        "lat": -20.520174,
+        "lon": 47.249889,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Violette",
+        "adresse": "RN7, Ambositra",
+        "tel": "020-47-710-84, 032-56-117-23",
+        "email": "_",
+        "site web": "http://www.motel_violette.com",
+        "prix": "14 - 23€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d1063146-Reviews-Bungalow_Motel_Violette-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.249889,
+          -20.520174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 42,
+        "lat": -20.532718,
+        "lon": 47.239287,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Anjara",
+        "adresse": "Lot 21 A 22 Vohidahy Ambositra MG, 306, Ambositra",
+        "tel": "032-55-931-91",
+        "email": "_",
+        "site web": "http://www.hotelanjara.blogvie.com",
+        "prix": " 6,25 -  9€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d8035677-Reviews-Hotel_Anjara-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.239287,
+          -20.532718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 43,
+        "lat": -20.535408,
+        "lon": 47.246237,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel-Restaurant Jonathan",
+        "adresse": "Lot IID7, Est-Vinany, Ambositra, Madagascar",
+        "tel": "020-47-713-89, 034-20-713-77",
+        "email": "_",
+        "site web": "_",
+        "prix": "7 - 9€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d1533896-Reviews-Hotel_Jonathan-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.246237,
+          -20.535408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 44,
+        "lat": -20.530878,
+        "lon": 47.24676,
+        "region": "Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel du Centre",
+        "adresse": "Ampivarotanomby, Ambositra",
+        "tel": "032-86-658-39 , 034-47-710-36",
+        "email": "_",
+        "site web": "_",
+        "prix": " 8,75 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.24676,
+          -20.530878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 45,
+        "lat": -20.704901,
+        "lon": 47.251899,
+        "region": "Environs d'Ambositra",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Sous le soleil de Mada",
+        "adresse": "Ambositra",
+        "tel": "033-07-344-14 , 034-07-344-14",
+        "email": "_",
+        "site web": "http:://souslesoleildemada.monsite_orange.fr",
+        "prix": "30 - 50€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g659311-d3447302-Reviews-Sous_le_Soleil_de_Mada-Ambositra_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.251899,
+          -20.704901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 46,
+        "lat": -21.453645,
+        "lon": 47.089163,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Raza-Otel",
+        "adresse": "Fianarantsoa",
+        "tel": "020-75-519-15, 034-14-221-73",
+        "email": "razaotel@moov.com",
+        "site web": "_",
+        "prix": " 7,5 - 11,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d13912810-Reviews-Raza_Otel-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.089163,
+          -21.453645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 47,
+        "lat": -21.44231,
+        "lon": 47.091037,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Mini-Croq",
+        "adresse": "Lot 172B/3603 Antarandolo, Haute Matsiatra, Madagascar, 42, Fianarantsoa",
+        "tel": "020-75-907-68, 033-12-202-02",
+        "email": "_",
+        "site web": "_",
+        "prix": " 4,5 - 10€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.091037,
+          -21.44231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 48,
+        "lat": -21.451942,
+        "lon": 47.088256,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Residence Matsiatra",
+        "adresse": "Rue Rakotozafy Alphonse, Fianarantsoa",
+        "tel": "034-65-598-18, 020-75-507-47",
+        "email": "_",
+        "site web": "http://www.hotelmatsiatra.com",
+        "prix": "15 - 23€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d10361310-Reviews-Residence_Matsiatra-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.088256,
+          -21.451942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 49,
+        "lat": -21.455064,
+        "lon": 47.080037,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Tsara Guest House",
+        "adresse": "Fianarantsoa",
+        "tel": "020-75-502-06, 032-05-516-12",
+        "email": "_",
+        "site web": "http://www.tsaraguesthouse.com",
+        "prix": "12 - 36€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d656757-Reviews-Tsara_Guest_House-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.080037,
+          -21.455064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 50,
+        "lat": -21.447668,
+        "lon": 47.087526,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Cotsoyannis",
+        "adresse": "Rue Printsy Ramaharo",
+        "tel": "020-75-514-72, 032-40-209-86",
+        "email": "_",
+        "site web": "http://www.hotel.cotsoyannis.mg",
+        "prix": " 18,12 - 21,37€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d2233058-Reviews-Hotel_Cotsoyannis-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.087526,
+          -21.447668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 51,
+        "lat": -21.442158,
+        "lon": 47.091852,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Grand Palais",
+        "adresse": "Antarandolo, Fianarantsoa",
+        "tel": "020-75-502-24, 034-06-818-48",
+        "email": "legrandpalais@salem.mg",
+        "site web": "_",
+        "prix": " 16,25  - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d12412248-Reviews-Le_Grand_Palais-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.091852,
+          -21.442158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 52,
+        "lat": -21.441756,
+        "lon": 47.093936,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La case Madrigal",
+        "adresse": "Antarandolo VILLA SOALALAO Lot 030E/3603 Fianarantsoa MG 301, Fianarantsoa",
+        "tel": "032-60-316-40",
+        "email": "lacasemadrigal@hotmail.fr",
+        "site web": "_",
+        "prix": " 7,5 - 20,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d3543917-Reviews-La_Case_Madrigal-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.093936,
+          -21.441756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 53,
+        "lat": -21.458073,
+        "lon": 47.078527,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La Riziere",
+        "adresse": "Fianarantsoa",
+        "tel": "020-75-502-15",
+        "email": "_",
+        "site web": "http://www.lariziere.org",
+        "prix": "24 - 44€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d7700072-Reviews-La_Riziere-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.078527,
+          -21.458073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 54,
+        "lat": -21.454795,
+        "lon": 47.086687,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Zomatel",
+        "adresse": "Fianarantsoa",
+        "tel": "75-507-97, 034-07-255-27",
+        "email": "_",
+        "site web": "http://www.zomatel_madagascar.com",
+        "prix": "10 - 38€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d1446947-Reviews-Zomatel_Hotel-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.086687,
+          -21.454795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 55,
+        "lat": -21.450057,
+        "lon": 47.087203,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Tombontsoa",
+        "adresse": "Ambalapaiso",
+        "tel": "020-75-514-05",
+        "email": "_",
+        "site web": "http://www.hotel_tombontsoa.com",
+        "prix": "14 - 20€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d2420978-Reviews-Hotel_Tombontsoa-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.087203,
+          -21.450057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 56,
+        "lat": -21.439857,
+        "lon": 47.097656,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Soafia",
+        "adresse": "Antsororokavo Ambony, Fianarantsoa",
+        "tel": "020-75-503-53",
+        "email": "_",
+        "site web": "http://www.soafia_hotel.com",
+        "prix": " 11,35 - 24,12€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d1963516-Reviews-Hotel_Soafia-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.097656,
+          -21.439857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 57,
+        "lat": -21.446982,
+        "lon": 47.088425,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Soratel",
+        "adresse": "Avenue du General Leclerc, Fianarantsoa",
+        "tel": "020-75-516-66, 033-08-988-88",
+        "email": "_",
+        "site web": "http://www.soratel.com",
+        "prix": " 12,25 - 13,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d4235080-Reviews-Hotel_Soratel-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.088425,
+          -21.446982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 58,
+        "lat": -21.448808,
+        "lon": 47.086558,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Victoria Hotel",
+        "adresse": "Rue Printsy Ramaharo",
+        "tel": "020-75-507-05, 034 33 110 20",
+        "email": "_",
+        "site web": "_",
+        "prix": " 20,37 - 23€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.086558,
+          -21.448808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 59,
+        "lat": -21.446506,
+        "lon": 47.259117,
+        "region": "Fianarantsoa",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Lac Hotel",
+        "adresse": "Ambatomalama, Fianarantsoa",
+        "tel": "020-75-958-73 , 020-75-959-06",
+        "email": "_",
+        "site web": "http://www.lachotel.com",
+        "prix": " 20 - 62,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298271-d649892-Reviews-Lac_Hotel-Fianarantsoa_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.259117,
+          -21.446506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 60,
+        "lat": -21.832525,
+        "lon": 46.936017,
+        "region": "Ambalavao",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La Residence du Betsileo",
+        "adresse": "Ambalavao",
+        "tel": "033-83-725-54 , 032-28-259-80",
+        "email": "residencedubetsileo@gmail.com",
+        "site web": "_",
+        "prix": " 9 - 11,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1468138-d8144764-Reviews-La_Residence_du_Betsileo-Ambalavao_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.936017,
+          -21.832525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 61,
+        "lat": -21.828658,
+        "lon": 46.941382,
+        "region": "Ambalavao",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Tsienimparihy",
+        "adresse": "Ambalavao",
+        "tel": "033-05-607-22 , 034-08-158-62",
+        "email": "hoteltsienimparihy@yahoo.fr",
+        "site web": "_",
+        "prix": " 10 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.941382,
+          -21.828658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 62,
+        "lat": -21.829982,
+        "lon": 46.941337,
+        "region": "Ambalavao",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Aux Bougainvillees",
+        "adresse": "Ambalavao",
+        "tel": "020-75-340-01, 032-43-680-69",
+        "email": "auxboungainvilleesambalavao@gmail.com",
+        "site web": "_",
+        "prix": " 15,25 - 31€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1468138-d1469525-Reviews-Aux_Bougainvillees-Ambalavao_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.941337,
+          -21.829982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 63,
+        "lat": -21.817887,
+        "lon": 46.949822,
+        "region": "Ambalavao",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Tsienimparihy lodge",
+        "adresse": "Ambalavao",
+        "tel": "033-08-811-79 , 034-46-184-42",
+        "email": "tsienimparihy_lodge@yahoo.fr",
+        "site web": "_",
+        "prix": " 26,25 - 43€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1468138-d8700403-Reviews-Tsienimparihy_Lodge-Ambalavao_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.949822,
+          -21.817887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 64,
+        "lat": -21.82893,
+        "lon": 46.865844,
+        "region": "Environs d'Ambalavao",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La Varangue Betsileo",
+        "adresse": "RN7, Ambalavao",
+        "tel": "032-63-376-49",
+        "email": "_",
+        "site web": "http://www.varangue_betsileo.com",
+        "prix": "20 - 40€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.865844,
+          -21.82893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 65,
+        "lat": -21.250743,
+        "lon": 47.426748,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Setam Lodge",
+        "adresse": "RN25, Ranomafana",
+        "tel": "020-24-310-71",
+        "email": "_",
+        "site web": "http://www.setam_lodge.mg",
+        "prix": " 33,25 - 43,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d1049215-Reviews-Setam_Lodge-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.426748,
+          -21.250743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 66,
+        "lat": -21.251076,
+        "lon": 47.441394,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Domainenature",
+        "adresse": "RN25, Ranomafana",
+        "tel": "032-05-588-61, 020-22-310-72",
+        "email": "_",
+        "site web": "http://www.domainenaturemada.com",
+        "prix": "23 - 49€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.441394,
+          -21.251076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 67,
+        "lat": -21.253717,
+        "lon": 47.447726,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Karibotel",
+        "adresse": "Ranomafana",
+        "tel": "033-15-629-50,51",
+        "email": "resa.karibotelranomafana@gmail.com",
+        "site web": "_",
+        "prix": " 26,25 - 31,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d7236755-Reviews-Karibotel_Ranomafana-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.447726,
+          -21.253717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 68,
+        "lat": -21.256551,
+        "lon": 47.45424,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Centrest",
+        "adresse": "Ranomafana",
+        "tel": "034-16-524-33",
+        "email": "centrestsejour@gmail.com",
+        "site web": "_",
+        "prix": " 36,25 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d2281251-Reviews-Centrest-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.45424,
+          -21.256551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 69,
+        "lat": -21.260917,
+        "lon": 47.454613,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Thermal Ranomafana",
+        "adresse": "Ranomafana",
+        "tel": "034-75-512-26",
+        "email": "_",
+        "site web": "http://www.thermal_ranomafana.mg",
+        "prix": "40 - 45€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d11812211-Reviews-Hotel_Thermal_Ranomafana-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.454613,
+          -21.260917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 70,
+        "lat": -21.260124,
+        "lon": 47.4563,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Chez Gaspard",
+        "adresse": "Ranomafana",
+        "tel": "033-01-155-05 , 032-87-115-15",
+        "email": "chezgaspard.ranomafana@gmail.com",
+        "site web": "_",
+        "prix": " 13,75€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d1900049-Reviews-Chez_Gaspard-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.4563,
+          -21.260124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 71,
+        "lat": -21.261652,
+        "lon": 47.460153,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Manja",
+        "adresse": "Ranomafana",
+        "tel": "033-09-010-22 , 032-07-540-03",
+        "email": "hotelmanja@gmail.com",
+        "site web": "_",
+        "prix": " 12,5 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d1192962-Reviews-Manja_Hotel-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.460153,
+          -21.261652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 72,
+        "lat": -21.278488,
+        "lon": 47.507841,
+        "region": "Ranomafana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Cristo",
+        "adresse": "RN25, Ranomafana",
+        "tel": "034-12-354-97",
+        "email": "cristohotel.cabanova.fr",
+        "site web": "_",
+        "prix": " 27,5 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g316109-d2370308-Reviews-Cristo-Ranomafana_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.507841,
+          -21.278488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 73,
+        "lat": -21.237862,
+        "lon": 48.346808,
+        "region": "Mananjary",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Patio",
+        "adresse": "Mananjary",
+        "tel": "034-16-908-71, 034-98-283-66",
+        "email": "pierrejean.bastin@hotmail.fr",
+        "site web": "_",
+        "prix": " 9 - 11,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1973338-d4059574-Reviews-Le_Patio_Hotel-Mananjary_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.346808,
+          -21.237862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 74,
+        "lat": -21.238944,
+        "lon": 48.347835,
+        "region": "Mananjary",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Sorafa",
+        "adresse": "Mananjary",
+        "tel": "034-14-268-95",
+        "email": "_",
+        "site web": "_",
+        "prix": "15 - 17€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1973338-d7942367-Reviews-Sorafa_Hotel-Mananjary_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.347835,
+          -21.238944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 75,
+        "lat": -21.243158,
+        "lon": 48.347362,
+        "region": "Mananjary",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Jardin de la Mer",
+        "adresse": "Masindrano, Mananjary 317",
+        "tel": "032-04-896-39, 034-07-896-39",
+        "email": "_",
+        "site web": "http://www.jardindelamer.net",
+        "prix": " 25 - 31,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1973338-d3629969-Reviews-Jardin_de_la_Mer-Mananjary_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.347362,
+          -21.243158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 76,
+        "lat": -21.200238,
+        "lon": 48.35646,
+        "region": "Mananjary",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Vahiny Lodge",
+        "adresse": "Mananjary",
+        "tel": "032-02-468-22 , 034-20-468-22",
+        "email": "vahinylodge@yahoo.fr",
+        "site web": "http://www.vahinylodge.com",
+        "prix": "70 - 90€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1973338-d1972819-Reviews-Vahiny_Lodge-Mananjary_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.35646,
+          -21.200238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 77,
+        "lat": -22.146085,
+        "lon": 48.006453,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Les Delices",
+        "adresse": "Manakara",
+        "tel": "020-72-217-34, 032-41-747-95 , 034-69-377-97",
+        "email": "delicehotel@orange.mg",
+        "site web": "_",
+        "prix": " 6,25 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1916792-d1889035-Reviews-Les_Delices_de_l_Orient-Manakara_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.006453,
+          -22.146085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 78,
+        "lat": -22.145453,
+        "lon": 48.006031,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Les Flamboyants",
+        "adresse": "Manakara",
+        "tel": "032-52-459-51",
+        "email": "leflamboyantmanakara@yahoo.fr",
+        "site web": "_",
+        "prix": " 6,25 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.006031,
+          -22.145453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 79,
+        "lat": -22.174315,
+        "lon": 48.008865,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Chez Dom et Victor",
+        "adresse": "Ampasimandroro, Manakara",
+        "tel": "032-24-891-80 , 034-52-711-36",
+        "email": "_",
+        "site web": "http://www.dormiramanakara.com",
+        "prix": "10 - 15€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.008865,
+          -22.174315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 80,
+        "lat": -22.145691,
+        "lon": 48.012023,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "La Vanille",
+        "adresse": "12, Manakara",
+        "tel": "72-210-23, 034-17-209-68",
+        "email": "hotelvanillemanakara@yahoo.fr",
+        "site web": "_",
+        "prix": " 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1916792-d2233133-Reviews-La_Vanille-Manakara_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.012023,
+          -22.145691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 81,
+        "lat": -22.158342,
+        "lon": 48.017083,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Antemoro",
+        "adresse": "Manakara",
+        "tel": "032-63-125-00",
+        "email": "_",
+        "site web": "http:://hotel_antemoro.blogspot.fr",
+        "prix": "15 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1916792-d7608495-Reviews-Hotel_Antemoro-Manakara_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.017083,
+          -22.158342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 82,
+        "lat": -22.145245,
+        "lon": 48.023432,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Parthenay Club",
+        "adresse": "Manakara",
+        "tel": "020-72-216-63, 034-29-803-14",
+        "email": "_",
+        "site web": "http://www.parthenay_club_manakara.com",
+        "prix": " 17,5 - 37,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1916792-d1962067-Reviews-Parthenay_Club-Manakara_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.023432,
+          -22.145245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 83,
+        "lat": -22.143016,
+        "lon": 48.022619,
+        "region": "Manakara",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Les Delices annexe",
+        "adresse": "Riviere Manakara",
+        "tel": "020-72-217-34, 032-41-747-95 , 033-02-203-37",
+        "email": "delicehotel@orange.mg",
+        "site web": "_",
+        "prix": " 12,5 - 22,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1916792-d1889035-Reviews-Les_Delices_de_l_Orient-Manakara_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.022619,
+          -22.143016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 84,
+        "lat": -22.81725,
+        "lon": 47.829995,
+        "region": "Farafangana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Le Concombre Masque",
+        "adresse": "Nord Fenoarivo, Farafangana",
+        "tel": "034-02-820-01 , 032-80-820-01",
+        "email": "concombrefaraf@outlook.fr",
+        "site web": "_",
+        "prix": "  7,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.829995,
+          -22.81725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 85,
+        "lat": -22.816439,
+        "lon": 47.829309,
+        "region": "Farafangana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Les Cocotiers",
+        "adresse": "Farafangana",
+        "tel": "032-78-642-61 , 032-02-457-05",
+        "email": "_",
+        "site web": "_",
+        "prix": " 7,5 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g7265012-d9832103-Reviews-Les_Trois_Cocotiers-Ambatondrazaka_Toamasina_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.829309,
+          -22.816439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 86,
+        "lat": -22.822012,
+        "lon": 47.830359,
+        "region": "Farafangana",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Hotel Austral",
+        "adresse": "Farafangana",
+        "tel": "034-16-391-75",
+        "email": "_",
+        "site web": "http://www.groupeaustralhotel.com",
+        "prix": " 10,25 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1729166-d7395381-Reviews-Austral_Hotel-Farafangana_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.830359,
+          -22.822012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 87,
+        "lat": -24.280017,
+        "lon": 47.319273,
+        "region": "Manantenina",
+        "description":"-",
+        "ville": "LE CENTRE",
+        "hotel": "Manampanihy Lodge",
+        "adresse": "Manantenina",
+        "tel": "032-28-326-92 , 032-05-600-88",
+        "email": "jeanphillipejarry@gmail.com",
+        "site web": "_",
+        "prix": " 12,5 - 20€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.319273,
+          -24.280017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 88,
+        "lat": -22.392772,
+        "lon": 46.115604,
+        "region": "Ihosy",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Tamana Hotel",
+        "adresse": "RN7, Ihosy",
+        "tel": "034-14-509-09 , 033-14-509-09",
+        "email": "_",
+        "site web": "_",
+        "prix": "_",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.115604,
+          -22.392772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 89,
+        "lat": -22.393096,
+        "lon": 46.077236,
+        "region": "Ihosy",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Tiana Hotel",
+        "adresse": "RN7, Ihosy",
+        "tel": "034-81-833-44",
+        "email": "tianahotel@gmail.com",
+        "site web": "_",
+        "prix": "_",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g15023156-d14963638-Reviews-Tiana_Hotel-Ihosy_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.077236,
+          -22.393096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 90,
+        "lat": -22.552787,
+        "lon": 45.413368,
+        "region": "Ranohira",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Chez Alice",
+        "adresse": "Ranohira",
+        "tel": "032-02-055-68 , 033-07-134-44",
+        "email": "chezalice@yahoo.fr",
+        "site web": "_",
+        "prix": "5 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d7315466-Reviews-Chez_Alice-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.413368,
+          -22.552787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 91,
+        "lat": -22.556379,
+        "lon": 45.414314,
+        "region": "Ranohira",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "L'Orchidee de l'Isalo",
+        "adresse": "RN7, Ranohira",
+        "tel": "032-44-676-89 , 034-76-942-01",
+        "email": "_",
+        "site web": "http://www.orchidee_isalo.com",
+        "prix": " 10,25 - 32,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d2428596-Reviews-L_Orchidee_de_L_Isalo-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.414314,
+          -22.556379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 92,
+        "lat": -22.556292,
+        "lon": 45.413757,
+        "region": "Ranohira",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Chez Berny",
+        "adresse": "RN7, Ranohira",
+        "tel": "032-05-257-75 , 032-05-257-69",
+        "email": "hotelbernyisalo@orange.mg",
+        "site web": "_",
+        "prix": "5 - 18€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d3501939-Reviews-Chez_Berny-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.413757,
+          -22.556292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 93,
+        "lat": -22.592295,
+        "lon": 45.393062,
+        "region": "Ranohira",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Isalo Ranch",
+        "adresse": "Route nationale 7, Au bord du Parc National de l'Isalo 313, Ranohira",
+        "tel": "034-02-510-25, 020-24-319-02",
+        "email": "_",
+        "site web": "http://www.isalo_ranch.com",
+        "prix": "35 - 44€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d1900034-Reviews-Hotel_Isalo_Ranch-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.393062,
+          -22.592295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 94,
+        "lat": -22.644487,
+        "lon": 45.331767,
+        "region": "Isalo",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Relais de la Reine",
+        "adresse": "Isalo Madagascar, Ranohira 313",
+        "tel": "034-02-123-29 , 034-41-782-73",
+        "email": "_",
+        "site web": "http://www.lerelaisdelareine.com",
+        "prix": "68 - 98€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d649893-Reviews-Hotel_Relais_de_la_Reine-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.331767,
+          -22.644487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 95,
+        "lat": -22.620385,
+        "lon": 45.373485,
+        "region": "Isalo",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Satrana Lodge",
+        "adresse": "Ranohira, RN7",
+        "tel": "034-14-260-87, 020-22-219-74",
+        "email": "_",
+        "site web": "http://www.satranalodge_madagascar.com",
+        "prix": "72 - 102€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1062008-d1719146-Reviews-Satrana_Lodge-Isalo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.373485,
+          -22.620385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 96,
+        "lat": -22.649352,
+        "lon": 45.329702,
+        "region": "Isalo",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Jardin du Roy",
+        "adresse": "BP01, Ranohira 313",
+        "tel": "020-22-336-23, 032-07-843-44",
+        "email": "_",
+        "site web": "http://www.lejardinduroy.com",
+        "prix": "85 - 105€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1062008-d1160283-Reviews-Le_Jardin_Du_Roy-Isalo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.329702,
+          -22.649352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 97,
+        "lat": -22.556416,
+        "lon": 45.412361,
+        "region": "Isalo",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "ITC Lodge-Momo Trek",
+        "adresse": "Ranohira, RN7",
+        "tel": "032-45-703-36 , 032-44-187-90",
+        "email": "_",
+        "site web": "http://www.itclodge_momotrek.com",
+        "prix": " 10 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2268327-d10275189-Reviews-ITC_Lodge-Ranohira_Fianarantsoa_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.412361,
+          -22.556416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 98,
+        "lat": -22.624037,
+        "lon": 45.356035,
+        "region": "Isalo",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Isalo Rock Lodge",
+        "adresse": "Fokontany de Ranohira, Ranohira",
+        "tel": "034-02-034-00 , 034-16-064-59",
+        "email": "_",
+        "site web": "http://www.isalorocklodge.com",
+        "prix": "100 - 140€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1062008-d1890057-Reviews-Isalo_Rock_Lodge-Isalo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.356035,
+          -22.624037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 99,
+        "lat": -22.916201,
+        "lon": 44.530582,
+        "region": "Sakaraha",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Palace hotel",
+        "adresse": "RN7, Sakaraha",
+        "tel": "032-75-709-50 , 033-71-772-37",
+        "email": "_",
+        "site web": "_",
+        "prix": "7 - 10€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.530582,
+          -22.916201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 100,
+        "lat": -23.362114,
+        "lon": 43.671635,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Chez Lala",
+        "adresse": "Rue Dr. Rabesandratana, Mahavatse, Toliara",
+        "tel": "020-94-434-17",
+        "email": "chezlalahotel@yahoo.fr",
+        "site web": "_",
+        "prix": " 5,5 - 12€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d9885957-Reviews-Chez_Lala-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.671635,
+          -23.362114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 101,
+        "lat": -23.354369,
+        "lon": 43.67996,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "L'Escapade",
+        "adresse": "Boulevard Galieni Toliara",
+        "tel": "020-94-411-82, 034-94-411-82",
+        "email": "_",
+        "site web": "http://www.escapadetulear.com",
+        "prix": " 13,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d3368500-Reviews-L_Escapade_Hotel-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.67996,
+          -23.354369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 102,
+        "lat": -23.356488,
+        "lon": 43.680356,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Chez Alain",
+        "adresse": "Sanfily, Toliara",
+        "tel": "020-94-415-27",
+        "email": "_",
+        "site web": "http://www.chez_alain.com",
+        "prix": " 7,5 - 32,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Restaurant_Review-g1826204-d1214691-Reviews-Chez_Alain-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.680356,
+          -23.356488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 103,
+        "lat": -23.351705,
+        "lon": 43.667592,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Saifee hotel",
+        "adresse": "Route de l'Eglise, Toliara",
+        "tel": "032-05-410-82 , 034-05-410-82",
+        "email": "_",
+        "site web": "http://www.saifee_hotel_tulear.com",
+        "prix": " 15,37 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.667592,
+          -23.351705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 104,
+        "lat": -23.353678,
+        "lon": 43.667944,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Serena",
+        "adresse": "Boulevard Philibert Tsiranana, Lalana Rabiby, Toliara",
+        "tel": "020-94-411-73,032-45-377-55",
+        "email": "_",
+        "site web": "http://www.serenatulear.com",
+        "prix": " 17,5 - 24€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d1164373-Reviews-Serena_Hotel-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.667944,
+          -23.353678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 105,
+        "lat": -23.356859,
+        "lon": 43.666466,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Paletuvier",
+        "adresse": "Boulevard Lyautey, Toliara",
+        "tel": "020-94-440-39, 032-02-542-83",
+        "email": "hotelpeletuviertulear@gmail.com",
+        "site web": "_",
+        "prix": " 16,62 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d4232622-Reviews-Hotel_Le_Paletuvier-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.666466,
+          -23.356859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 106,
+        "lat": -23.363426,
+        "lon": 43.697401,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "La Residence d'Ankily",
+        "adresse": "Andabizy, Toliara",
+        "tel": "032-40-328-77 , 034-45-163-77",
+        "email": "laresidenceankily@yahoo.fr",
+        "site web": "_",
+        "prix": " 17,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.697401,
+          -23.363426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 107,
+        "lat": -23.364898,
+        "lon": 43.695973,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Victory",
+        "adresse": "Andabizy (entree de la Ville par RN 7)",
+        "tel": "034- 14-440-63, 034-14-904-72",
+        "email": "hotelvictory.tulear@gmail.com",
+        "site web": "http://www.hoteltulear_victory.com",
+        "prix": "30 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d1773495-Reviews-Hotel_Victory_Toliara-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.695973,
+          -23.364898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 108,
+        "lat": -23.356874,
+        "lon": 43.666748,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Amazone",
+        "adresse": "Boulevard Lyautey, Toliara",
+        "tel": "020-94-448-43, 032-26-177-00",
+        "email": "hotelamazone.tulear@gmail.com",
+        "site web": "_",
+        "prix": " 41 - 47,26€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d2445450-Reviews-Hotel_Amazone-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.666748,
+          -23.356874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 109,
+        "lat": -23.3493,
+        "lon": 43.669525,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Moringa",
+        "adresse": "Rue Richelieu, Toliara",
+        "tel": "034-75-512-05, 020-94-441-55",
+        "email": "_",
+        "site web": "http://www.moringa.tulear.mg",
+        "prix": " 45 - 62,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d5552581-Reviews-Moringa_Hotel-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.669525,
+          -23.3493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 110,
+        "lat": -23.366823,
+        "lon": 43.672917,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Hyppocampo",
+        "adresse": "Rue Dr. Rabesandratana, MahavatseII, Toliara",
+        "tel": "020-94-410-21, 032-42-866-83",
+        "email": "_",
+        "site web": "http://www.hyppocampo.net",
+        "prix": " 40,5 - 57€",
+        "energie verte (sur 2)": "0/2",
+        "traitement de dechets  (sur 2)": "2/2",
+        "communaute  (sur 2)": "1/2",
+        "salaire_equitable(sur 2)": "1/2",
+        "ipe": "5/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d1904109-Reviews-Hotel_de_charme_Hyppocampo-Toliara_Toliara_Province.html",
+        "booking": "https://www.booking.com/hotel/mg/hyppocampo.fr.html?aid=376366"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.672917,
+          -23.366823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 111,
+        "lat": -23.351916,
+        "lon": 43.669457,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Tropical",
+        "adresse": "Lalana Raseta",
+        "tel": "032-69-971-78 , 034-25-930-53",
+        "email": "_",
+        "site web": "_",
+        "prix": " 7,5 - 9,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.669457,
+          -23.351916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 112,
+        "lat": -23.41341,
+        "lon": 43.755475,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Auberge de la Table",
+        "adresse": "Route de Saint-Augustin",
+        "tel": "034-07-600-15",
+        "email": "_",
+        "site web": "http://www.aubergedelatable.com",
+        "prix": "25 - 44€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d6215866-Reviews-Auberge_de_la_Table-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.755475,
+          -23.41341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 113,
+        "lat": -23.121576,
+        "lon": 43.609709,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Sur la plage Chez Cecile",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "034-94-907-00",
+        "email": "_",
+        "site web": "http://www.surlaplagechezcecile.com",
+        "prix": " 6,5 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d2086911-Reviews-Sur_La_Plage_Chez_Cecile-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.609709,
+          -23.121576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 114,
+        "lat": -23.127344,
+        "lon": 43.608244,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Jardin de l'Isle",
+        "adresse": "Ifaty,Toliara II",
+        "tel": "034-29-947-84 , 034-87-761-31",
+        "email": "lejardindelisle@yahoo.fr",
+        "site web": "_",
+        "prix": " 11,25 - 16,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d13205178-Reviews-Le_Jardin_de_L_isle-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.608244,
+          -23.127344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 116,
+        "lat": -23.125002,
+        "lon": 43.609331,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Villa Maroloko",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "034-20-034-43",
+        "email": "_",
+        "site web": "http://www.maroloko.com",
+        "prix": "15 - 20€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d3584123-Reviews-Villa_Maroloko-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.609331,
+          -23.125002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 117,
+        "lat": -23.118148,
+        "lon": 43.609973,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Bamboo Club",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "94-902-13, 034-66-55231",
+        "email": "_",
+        "site web": "http://www.bambo_club.com",
+        "prix": "22 - 40€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d1067563-Reviews-Hotel_Bamboo_Club-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.609973,
+          -23.118148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 118,
+        "lat": -23.128222,
+        "lon": 43.61675,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Solidaire Mangily",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "034-02-666-60",
+        "email": "_",
+        "site web": "http://www.hotelsolidairemangily.com",
+        "prix": "25 - 35€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d556564-Reviews-Hotel_Solidaire_Mangily-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.61675,
+          -23.128222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 119,
+        "lat": -23.168943,
+        "lon": 43.609894,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Nautilus",
+        "adresse": "BP 519, Toliara II",
+        "tel": "032-07-418-74 , 032-04-848-81",
+        "email": "_",
+        "site web": "http://www.nautilusmada.mg",
+        "prix": "45 - 55€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d3136366-Reviews-Le_Nautilus-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.609894,
+          -23.168943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 120,
+        "lat": -23.126147,
+        "lon": 43.608048,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Ifaty Beach Club",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "020-94-914-27, 034-29-709-99",
+        "email": "_",
+        "site web": "http://www.ifaty.com",
+        "prix": "32 - 75€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d650497-Reviews-Ifaty_Beach_Club-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.608048,
+          -23.126147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 121,
+        "lat": -23.124225,
+        "lon": 43.609438,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Princesse du lagon",
+        "adresse": "Mangily-Ifaty,Toliara II",
+        "tel": "034-98-887-49",
+        "email": "_",
+        "site web": "http://www.princessedulagon.com",
+        "prix": " 32,5 - 75€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d3485975-Reviews-Princesse_du_Lagon-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.609438,
+          -23.124225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 122,
+        "lat": -23.179316,
+        "lon": 43.61688,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Paradisier",
+        "adresse": "B.P 490, Ifaty, Ifaty-Mangily, Toliara 601",
+        "tel": "032-07-660-09",
+        "email": "_",
+        "site web": "http://www.paradisier.net",
+        "prix": "88 - 110 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d677676-Reviews-Le_Paradisier-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.61688,
+          -23.179316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 123,
+        "lat": -23.131298,
+        "lon": 43.606168,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Les Dunes d'Ifaty",
+        "adresse": "Ifaty,Toliara II",
+        "tel": "034-07-109-71 , 034-07-109-82",
+        "email": "_",
+        "site web": "_",
+        "prix": "55 - 115€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d1103263-Reviews-Les_Dunes_d_Ifaty-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.606168,
+          -23.131298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 124,
+        "lat": -23.130929,
+        "lon": 43.605708,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel de la Plage",
+        "adresse": "Ifaty,Toliara II",
+        "tel": "020-94-906-92, 033-37-362-76",
+        "email": "_",
+        "site web": "http://www.hotelplage_tulear.com",
+        "prix": "49 - 85€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d1019494-Reviews-Hotel_de_la_Plage_Ifaty-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.605708,
+          -23.130929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 125,
+        "lat": -23.055277,
+        "lon": 43.583302,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Ankasy Lodge",
+        "adresse": "Ifaty,Toliara II",
+        "tel": "034-79-395-67",
+        "email": "_",
+        "site web": "http://www.ankasy.com",
+        "prix": "110 - 200€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3651484-d1903967-Reviews-Ankasy_Lodge-Ambatomilo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.583302,
+          -23.055277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 126,
+        "lat": -22.662424,
+        "lon": 43.320524,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Five Senses Lodge",
+        "adresse": "Siege Social Tsiandamba, Tulear",
+        "tel": "032-98-447-39, 034-07-020-21",
+        "email": "info@fivesenseslodge.com",
+        "site web": "http://www.fivesenseslodge.com",
+        "prix": "140 - 360€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g15023046-d10470601-Reviews-Five_Senses_Lodge-Tsiandamba.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.320524,
+          -22.662424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 127,
+        "lat": -22.65736111,
+        "lon": 43.31816389,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Un peu plus au nord",
+        "adresse": "Route vers Salary",
+        "tel": "034-19-844-91 , 032-89-100-84",
+        "email": "_",
+        "site web": "http://www.unpeuplusaunordcecile.com",
+        "prix": " 7,5 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g303984-d11747322-Reviews-Un_Peu_Plus_Au_Nord-Ifaty_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.31816389,
+          -22.65736111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 128,
+        "lat": -22.554377,
+        "lon": 43.284588,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Salary Bay",
+        "adresse": "Salary Bay, Salary Avaratra, Toliara 601",
+        "tel": "020-75-514-86, 032-49-120-16",
+        "email": "_",
+        "site web": "http://www.salarybay.com",
+        "prix": "70 - 90€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d1553440-Reviews-Salary_Bay-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.284588,
+          -22.554377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 129,
+        "lat": -22.451264,
+        "lon": 43.27017,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Mikea Lodge",
+        "adresse": "Domaine Manohisoa | Tulear II, 602, Madagascar",
+        "tel": "032-50-100-31",
+        "email": "_",
+        "site web": "http://www.mikealodge.com",
+        "prix": "72€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3657331-d10167305-Reviews-Mikea_Lodge-Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.27017,
+          -22.451264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 130,
+        "lat": -22.07639,
+        "lon": 43.234524,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Coco Beach",
+        "adresse": "Andavadoaka",
+        "tel": "034-14-001-58",
+        "email": "nassim.tahora@gmail.com",
+        "site web": "_",
+        "prix": "12,5 - 17,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3861902-d5989698-Reviews-Coco_Beach_Hotel-Andavadoaka_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.234524,
+          -22.07639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 131,
+        "lat": -22.102884,
+        "lon": 43.239759,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Laguna Blu Resort",
+        "adresse": "Andavadoaka",
+        "tel": "034-05-814-10",
+        "email": "lagunabluresort@lagunabluresort.com",
+        "site web": "http://www.resortmadagascar.com",
+        "prix": "70 - 90€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3861902-d2273775-Reviews-Laguna_Blu_Resort-Andavadoaka_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.239759,
+          -22.102884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 132,
+        "lat": -23.554992,
+        "lon": 43.758748,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Paradis d'Esperance",
+        "adresse": "Saint-Augustin, Toliara II",
+        "tel": "032-40-787-53",
+        "email": "beauparadis@yahoo.fr",
+        "site web": "_",
+        "prix": " 3,75 - 7,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.758748,
+          -23.554992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 133,
+        "lat": -23.446845,
+        "lon": 43.759503,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Famata Lodge",
+        "adresse": "Ankilibe",
+        "tel": "020-94-937-83, 032-02-108-48",
+        "email": "_",
+        "site web": "http://www.famata_lodge_tulear.com",
+        "prix": "15 - 36€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d5571249-Reviews-Famata_Lodge-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.759503,
+          -23.446845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 134,
+        "lat": -23.432931,
+        "lon": 43.749949,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Bakuba",
+        "adresse": "Route Saint-Augustin, Ankilibe",
+        "tel": "032-51-528-97 , 032-48-540-50",
+        "email": "_",
+        "site web": "http://www.bakubaconception.com",
+        "prix": "105 - 185€",
+        "energie verte (sur 2)": "2/2",
+        "traitement de dechets  (sur 2)": "2/2",
+        "communaute  (sur 2)": "1/2",
+        "salaire_equitable(sur 2)": "1/2",
+        "ipe": "7.5/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d4269268-Reviews-Bakuba-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.749949,
+          -23.432931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 135,
+        "lat": -23.662134,
+        "lon": 43.643752,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Peter Pan",
+        "adresse": "Quartiere Saraha, Anakao",
+        "tel": "032-82-614-54",
+        "email": "_",
+        "site web": "http://www.peterpenhotel.com",
+        "prix": " 7,5 - 17,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d3291974-Reviews-Peter_Pan_Anakao-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.643752,
+          -23.662134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 136,
+        "lat": -23.642561,
+        "lon": 43.652614,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Longo Vezo - Chez Eric et Carole",
+        "adresse": "Anakao",
+        "tel": "032-02-631-23 , 032-02-695-12",
+        "email": "_",
+        "site web": "http://www.longovezo.com",
+        "prix": "14 - 19€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d1889025-Reviews-Hotel_Longo_Vezo-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.652614,
+          -23.642561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 137,
+        "lat": -23.654543,
+        "lon": 43.649248,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Safari Vezo",
+        "adresse": "Anakao",
+        "tel": "034-07-602-52 , 032-07-602-52 , 033-94-413-81",
+        "email": "_",
+        "site web": "http://www.safarivezo.com",
+        "prix": " 22,5 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d735899-Reviews-Hotel_Safari_Vezo-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.649248,
+          -23.654543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 138,
+        "lat": -23.643294,
+        "lon": 43.652695,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Lalandaka",
+        "adresse": "Bureau de Mahavatse II, Anakao",
+        "tel": "032-05-622-80, 020-94-922-21",
+        "email": "_",
+        "site web": "http://www.lalandaka.com",
+        "prix": " 22,5 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d4082014-Reviews-Hotel_Lalandaka-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.652695,
+          -23.643294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 139,
+        "lat": -23.648893,
+        "lon": 43.651503,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Atlantis",
+        "adresse": "Anakao",
+        "tel": "034-10-000-72, 020-94-700-42",
+        "email": "_",
+        "site web": "http://www.atlantismadagascarw.com",
+        "prix": " 6,5 - 17,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d2367162-Reviews-Atlantis_Madagascar-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.651503,
+          -23.648893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 140,
+        "lat": -23.672919,
+        "lon": 43.647532,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Anakao Ocean Lodge & Spa",
+        "adresse": "Andovoke Bay, Anakao 602",
+        "tel": "020-94-919-57 , 020-94-921-76",
+        "email": "_",
+        "site web": "http://www.anakaooceanlodge.com",
+        "prix": "110 - 190€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g736871-d1159070-Reviews-Anakao_Ocean_Lodge-Anakao_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.647532,
+          -23.672919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 141,
+        "lat": -23.356769,
+        "lon": 43.665958,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Vahombe",
+        "adresse": "Ambohitsabo, Toliara",
+        "tel": "020-94-441-61, 034-48-835-29",
+        "email": "_",
+        "site web": "http://www.hotelvahombe.com",
+        "prix": " 7,5 - 10€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.665958,
+          -23.356769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 142,
+        "lat": -24.079822,
+        "lon": 43.672782,
+        "region": "Tuléar",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Domaine d'Ambola",
+        "adresse": "Efoetse, Anakao, Toliara",
+        "tel": "034-66-413-47",
+        "email": "_",
+        "site web": "http://www.ambola_madagascar.com",
+        "prix": "35 - 45€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1826204-d1829736-Reviews-Le_Domaine_d_Ambola-Toliara_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.672782,
+          -24.079822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 143,
+        "lat": -24.694263,
+        "lon": 44.74639,
+        "region": "Ampanihy",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Angora",
+        "adresse": "Ampanihy",
+        "tel": "033-12-232-82 , 034-17-229-32 , 032-83-076-67",
+        "email": "_",
+        "site web": "_",
+        "prix": " 7,5 - 10€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74639,
+          -24.694263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 144,
+        "lat": -25.423418,
+        "lon": 44.940197,
+        "region": "Beloha, Androy",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Lavanono Lodge - Chez Gigi",
+        "adresse": "Lavanono, Androy",
+        "tel": "0692-617-204, 032-22-187-37",
+        "email": "gigi@lavanono.com",
+        "site web": "http://www.lavanono.com",
+        "prix": "22€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.940197,
+          -25.423418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 145,
+        "lat": -25.568838,
+        "lon": 45.532326,
+        "region": "Androy",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Libertalia",
+        "adresse": "Faux-cap, Androy",
+        "tel": "020-92-904-55,  032-07-560-41 ",
+        "email": "madalibertalia@yahoo.fr",
+        "site web": "_",
+        "prix": "22 €",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.532326,
+          -25.568838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 146,
+        "lat": -25.033511,
+        "lon": 46.993769,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Chez Anita",
+        "adresse": "Taolagnaro",
+        "tel": "020-92-904-22,  033-12-679-83",
+        "email": "anitahotel.restaurant@gmail.com",
+        "site web": "_",
+        "prix": "6 - 10€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Restaurant_Review-g1584026-d6369060-Reviews-Hotel_Restaurant_Anita-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.993769,
+          -25.033511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 147,
+        "lat": -25.026252,
+        "lon": 46.987739,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Tournesol",
+        "adresse": "Avenue du Marechal Foch, Taolagnaro",
+        "tel": "033-12-513-16 , 032-22-508-08",
+        "email": "_",
+        "site web": "_",
+        "prix": " 12,5 - 15€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.987739,
+          -25.026252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 148,
+        "lat": -25.027123,
+        "lon": 46.98978,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Nepenthes",
+        "adresse": "Proche de CECAM Anosy, Taolagnaro",
+        "tel": "034-60-144-41",
+        "email": "_",
+        "site web": "http://www.nepentheshotel_fort_dauplin.com",
+        "prix": " 13 - 16,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d3590542-Reviews-Le_Nepenthes-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.98978,
+          -25.027123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 149,
+        "lat": -25.027768,
+        "lon": 46.972221,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Port",
+        "adresse": "Avenue du Marechal Foch, Taolagnaro",
+        "tel": "034-11-001-88 , 033-11-001-88",
+        "email": "_",
+        "site web": "_",
+        "prix": " 12,75 - 20,37€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d4341724-Reviews-Le_Port_Hotel-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.972221,
+          -25.027768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 150,
+        "lat": -25.040033,
+        "lon": 46.996157,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Lavasoa",
+        "adresse": "Libanona, Taolagnaro 614",
+        "tel": "033-12-517-03",
+        "email": "_",
+        "site web": "http://www.lavasoa.com",
+        "prix": "45 - 75€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d1953872-Reviews-Hotel_Lavasoa-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.996157,
+          -25.040033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 151,
+        "lat": -25.03138,
+        "lon": 46.990673,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "La Croix du Sud",
+        "adresse": "Boulevard No1, Taolagnaro 614",
+        "tel": "032-05-416-84 , 033-23-210-08",
+        "email": "_",
+        "site web": "http://www.madagascar_resorts.com",
+        "prix": "57 - 78€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d1795054-Reviews-La_Croix_du_Sud-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.990673,
+          -25.03138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 152,
+        "lat": -25.028647,
+        "lon": 46.99609,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Hotel Kaleta",
+        "adresse": "Avenue Gallieni, Taolagnaro",
+        "tel": "020-92-212-87 , 020-92-211-08",
+        "email": "kaletaresa@moov.com",
+        "site web": "_",
+        "prix": " 31,5 - 60€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d2617353-Reviews-Kaleta_Hotel-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.99609,
+          -25.028647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 153,
+        "lat": -25.041788,
+        "lon": 46.995634,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Talinjoo",
+        "adresse": "Libanona, Taolagnaro 614",
+        "tel": "034-05-212-35",
+        "email": "_",
+        "site web": "http://www.talinjoo.com",
+        "prix": "78 - 160€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d2100158-Reviews-Talinjoo_Hotel-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.995634,
+          -25.041788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 154,
+        "lat": -25.031828,
+        "lon": 46.989873,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Le Dauphin",
+        "adresse": "Boulevard No1, Taolagnaro 614",
+        "tel": "032-05-416-84 , 033-23-210-07",
+        "email": "_",
+        "site web": "http://www.madagascar_resorts.com",
+        "prix": "48 - 66€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d1795070-Reviews-Le_Dauphin-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.989873,
+          -25.031828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 155,
+        "lat": -25.033905,
+        "lon": 46.993655,
+        "region": "Taolagnaro",
+        "description":"-",
+        "ville": "LE SUD",
+        "hotel": "Azura Hotel & Spa",
+        "adresse": "Rue Gen.Brulard",
+        "tel": "033-15-211-17",
+        "email": "_",
+        "site web": "_",
+        "prix": "25,25 - 37,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1584026-d10954593-Reviews-Azura_Hotel_Spa-Tolanaro_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.993655,
+          -25.033905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 156,
+        "lat": -19.541771,
+        "lon": 45.456939,
+        "region": "Miandrivazo",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "La Pirogue",
+        "adresse": "RN34, Andapanangoy, Miandrivazo",
+        "tel": "032-07-508-37 , 033-40-499-99",
+        "email": "lakanahotel@yahoo.fr",
+        "site web": "_",
+        "prix": " 8,5 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.456939,
+          -19.541771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 157,
+        "lat": -19.543686,
+        "lon": 45.449858,
+        "region": "Miandrivazo",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Princesse Tsiribihina",
+        "adresse": "RN34, Andapanangoy, Miandrivazo",
+        "tel": "020-22-262-97, 032-11-301-72",
+        "email": "_",
+        "site web": "http://www.madagascar_circuits.com",
+        "prix": " 22,5 - 35€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1444405-d4739435-Reviews-Princesse_Tsiribihina-Miandrivazo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.449858,
+          -19.543686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 158,
+        "lat": -19.522058,
+        "lon": 45.45801,
+        "region": "Miandrivazo",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Hotel Baobab",
+        "adresse": "Miandrivazo",
+        "tel": "032-24-620-45",
+        "email": "_",
+        "site web": "_",
+        "prix": " 8,75€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1444405-d12825183-Reviews-Hotel_Restaurant_Baobab-Miandrivazo_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.45801,
+          -19.522058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 159,
+        "lat": -19.703855,
+        "lon": 44.544769,
+        "region": "Belo/Tsiribihina",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Hotel-restaurant du Menabe",
+        "adresse": "Rue principal, Belo Tsiribihina",
+        "tel": "032-42-635-35",
+        "email": "_",
+        "site web": "http:://hoteldumenabe.free.fr",
+        "prix": " 7,5 - 12,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g1899426-d5957676-Reviews-Hotel_Restaurant_du_Menabe-Belo_Tsiribihina_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.544769,
+          -19.703855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 160,
+        "lat": -19.703654,
+        "lon": 44.547355,
+        "region": "Belo/Tsiribihina",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Karibo",
+        "adresse": "Belo/Tsiribihina",
+        "tel": "032-51-872-13 , 034-20-872-13",
+        "email": "hotelrestaurantkaribo@gmail.com",
+        "site web": "_",
+        "prix": " 7,5 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Restaurant_Review-g1899426-d12178761-Reviews-Karibo_Hotel-Belo_Tsiribihina_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.547355,
+          -19.703654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 161,
+        "lat": -19.138411,
+        "lon": 44.788988,
+        "region": "Antsalova",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Tanankoay",
+        "adresse": "Bekokapa, Morondava 619, Madagascar",
+        "tel": "034-18-251-93 , 033-13-658-45",
+        "email": "_",
+        "site web": "http://www.tanankoay.com",
+        "prix": " 3,75 - 27,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d3460951-Reviews-Tanankoay-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.788988,
+          -19.138411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 162,
+        "lat": -19.142164,
+        "lon": 44.799784,
+        "region": "Antsalova",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "L'Orchidee du Bemaraha",
+        "adresse": "Tsingy de Bemaraha National Park, Madagascar",
+        "tel": "034-07-165-79 , 032-50-898-79",
+        "email": "_",
+        "site web": "http://www.orchideedubemaraha.com",
+        "prix": "10 - 35€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g673046-d2215847-Reviews-Hotel_Orchidee_du_Bemaraha-Tsingy_de_Bemaraha_National_Park_Mahajanga_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.799784,
+          -19.142164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 163,
+        "lat": -19.140535,
+        "lon": 44.796314,
+        "region": "Antsalova",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "L'Olympe du Bemaraha",
+        "adresse": "Bekopaka, Madagascar, Tsingy de Bemaraha National Park, Madagascar",
+        "tel": "032-05-216-05 , 033-19-127-77 , 034-36-746-39",
+        "email": "_",
+        "site web": "http://www.olympedubemaraha_madagascar.com",
+        "prix": " 11,5 - 39€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g673046-d2262177-Reviews-Olympe_du_Bemaraha-Tsingy_de_Bemaraha_National_Park_Mahajanga_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.796314,
+          -19.140535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 164,
+        "lat": -19.141893,
+        "lon": 44.788027,
+        "region": "Antsalova",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Le Grand Hotel du Tsingy",
+        "adresse": "Bekopaka 110, Madagascar",
+        "tel": "034-99-389-99",
+        "email": "_",
+        "site web": "http://www.legrandhotel_du_tsingy.com",
+        "prix": " 31,25 - 37,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g2412440-d8865345-Reviews-Le_Grand_Hotel_du_Tsingy_de_Bemaraha-Bekopaka_Mahajanga_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.788027,
+          -19.141893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 165,
+        "lat": -20.301787,
+        "lon": 44.268888,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Trecigone",
+        "adresse": "Rue de l'Independance, Morondava",
+        "tel": "020-95-924-25, 032-04-687-60",
+        "email": "_",
+        "site web": "http://www.hoteltrecigone.com",
+        "prix": " 12,25 - 16,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.268888,
+          -20.301787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 166,
+        "lat": -20.291085,
+        "lon": 44.27411,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Vezo Hotel",
+        "adresse": "Centre Morondava",
+        "tel": "032-11-220-00",
+        "email": "menage.a@gmail.com",
+        "site web": "_",
+        "prix": "15 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d10666242-Reviews-Vezo_Hotel-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.27411,
+          -20.291085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 167,
+        "lat": -20.29801,
+        "lon": 44.268724,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Chez Maggie",
+        "adresse": "Morondava",
+        "tel": "020-95-523-47, 032-47-326-70",
+        "email": "_",
+        "site web": "http://www.chezmaggie.com",
+        "prix": "30 - 51€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d541372-Reviews-Chez_Maggie_Hotel_Restaurant-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.268724,
+          -20.29801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 168,
+        "lat": -20.298656,
+        "lon": 44.269133,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Le Sunbeach",
+        "adresse": "BP22 Rue De L' Independance, Morondava",
+        "tel": "032-40-242-75 , 032-07-511-75",
+        "email": "_",
+        "site web": "http://www.sunbeachmorondava.com",
+        "prix": 35,
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d3226844-Reviews-Le_Sun_Beach-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.269133,
+          -20.298656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 169,
+        "lat": -20.29905,
+        "lon": 44.269425,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Baobab Cafe",
+        "adresse": "Rue de l'Independance, Morondava",
+        "tel": "020-95-520-12, 032-85-034-84",
+        "email": "_",
+        "site web": "http://www.baobabcafehotel.net",
+        "prix": "29 - 70€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d8355211-Reviews-Baobab_Cafe-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.269425,
+          -20.29905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 170,
+        "lat": -20.299927,
+        "lon": 44.267991,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Palissandre Cote-Ouest Resort & Spa",
+        "adresse": "Nosy Kely Morondava, Morondava 619, Madagascar",
+        "tel": "020-95-520-22, 033-15-349-74",
+        "email": "_",
+        "site web": "http://www.palissandre_cote_ouest.com",
+        "prix": "135 - 195€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g298273-d1209719-Reviews-Palissandre_Cote_Ouest_Resort_Spa-Morondava_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.267991,
+          -20.299927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 171,
+        "lat": -20.745638,
+        "lon": 43.995344,
+        "region": "Morondava",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Ecolodge du Menabe",
+        "adresse": "Bp 384, Belo Sur Mer 619, Madagascar",
+        "tel": "033-09-436-32",
+        "email": "www.menabelo.com",
+        "site web": "_",
+        "prix": " 12,5 - 21,25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3656553-d662248-Reviews-Ecolodge_du_Menabe-Belo_Sur_Mer_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.995344,
+          -20.745638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 172,
+        "lat": -20.743076,
+        "lon": 43.998855,
+        "region": "Menabe",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Le Dauphin Vezo",
+        "adresse": " Belo Sur Mer 619, Madagascar",
+        "tel": "033-71-795-56 , 032-94-780-25",
+        "email": "www.le_dauphin_vezo.com",
+        "site web": "_",
+        "prix": "22 - 25€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3656553-d6107708-Reviews-Hotel_le_Dauphin_Vezo-Belo_Sur_Mer_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.998855,
+          -20.743076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 173,
+        "lat": -20.728386,
+        "lon": 44.006189,
+        "region": "Menabe",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Entremer",
+        "adresse": "Amboaniotelo, BP 47, Belo Sur Mer 619, Madagascar",
+        "tel": "033-15-472-45",
+        "email": "_",
+        "site web": "_",
+        "prix": " 17,5 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g3656553-d6483117-Reviews-Entremer-Belo_Sur_Mer_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.006189,
+          -20.728386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 174,
+        "lat": -21.743598,
+        "lon": 43.356611,
+        "region": "Morombe",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "Chez Catia",
+        "adresse": "Morombe",
+        "tel": "032-74-273-40 , 033-01-769-30",
+        "email": "rogeka_momo@yahoo.fr",
+        "site web": "_",
+        "prix": "15 - 30€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "_",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.356611,
+          -21.743598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 175,
+        "lat": -21.744823,
+        "lon": 43.354388,
+        "region": "Morombe",
+        "description":"-",
+        "ville": "L'OUEST/LE SUD-OUEST (MENABE)",
+        "hotel": "La Pirogue d'Or",
+        "adresse": "Morombe",
+        "tel": "032-02-147-24",
+        "email": "www.piroguedormorombe.com",
+        "site web": "_",
+        "prix": " 15 - 22,5€",
+        "energie verte (sur 2)": "_",
+        "traitement de dechets  (sur 2)": "_",
+        "communaute  (sur 2)": "_",
+        "salaire_equitable(sur 2)": "_",
+        "ipe": "0/10",
+        "trip_advisor": "https://www.tripadvisor.com/Hotel_Review-g12002314-d15093132-Reviews-La_Pirogue_d_Or-Morombe_Toliara_Province.html",
+        "booking": "_"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.354388,
+          -21.744823
+        ]
+      }
+    }
+  ]
+}

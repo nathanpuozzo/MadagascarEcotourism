@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/GreenUI"
+            android:minHeight="?android:attr/windowTitleSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/guideText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="141dp"
+            android:layout_marginRight="141dp"
+            android:gravity="center"
+            android:text="@string/hotel"
+            android:textColor="@color/WhiteText"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/ReturnButton2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="163dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toStartOf="@+id/guideText6"
+            android:layout_toLeftOf="@+id/guideText6"
+            android:contentDescription="@string/icon_hotel"
+            app:srcCompat="@drawable/ic_hotel_dark" />
+
+        <ImageButton
+            android:id="@+id/ReturnButton2"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="@string/return_arrow"
+            app:srcCompat="@drawable/ic_return" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSPINNER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/WhiteText"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/ListSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteText">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewHotel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
