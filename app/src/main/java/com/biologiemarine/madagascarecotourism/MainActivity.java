@@ -19,13 +19,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -35,10 +33,9 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.biologiemarine.madagascarecotourism.Adapter.CustomContactAdapter;
+
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.firebase.storage.FirebaseStorage;
@@ -125,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private RecyclerView mRecyclerView1;
     private RecyclerView mRecyclerView2;
     private RecyclerView mRecyclerView3;
-    private CustomContactAdapter mAdapter;
+
     private CustomHotelAdapter hotelAdapter;
     private CustomHotelAdapter areaAdapter;
 
@@ -428,158 +425,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         //Guides
         floatingActionButton3.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
-//TODO : Spinner button pour trier les hôtels
-                //Make appears Layout 'Activity_guide'
-                (findViewById( R.id.includedGuide )).setVisibility( View.VISIBLE );
 
-                spinner = (Spinner) findViewById( R.id.ListSpinner );
-                stringArrayAdapter = new ArrayAdapter <String>( MainActivity.this, android.R.layout.simple_list_item_1, sort );
-                spinner.setAdapter( stringArrayAdapter );
+                //Go to GuideActivityList
+                Intent intent = new Intent( getApplicationContext(), GuideListActivity.class );
+                startActivity( intent );
 
-                spinner.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView <?> parent, View view, int position, long id) {
-                        switch (position) {
-                            case 0:
-                                record = "Noms";
-                                break;
-
-                            case 1:
-                                record = "Score";
-                                break;
-
-                            case 2:
-                                record = "Prix";
-                                break;
-                        }
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView <?> parent) {
-
-                    }
-
-                } );
-
-                final ImageButton button = findViewById( R.id.ReturnButton );
-                button.setOnClickListener( new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Code here executes on main thread after user presses button
-                        (findViewById( R.id.includedGuide )).setVisibility( View.GONE );
-                        (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
-                    }
-                } );
-
-
-                mRecyclerView1 = findViewById( R.id.recyclerView );
-
-
-                mAdapter = new CustomContactAdapter( mArrayList, new OnItemRecyclerClick() {
-                    @Override
-                    public void onRecyclerViewItemClicked(int position, int id) {
-                        Toast.makeText( getApplicationContext(), "" + position, Toast.LENGTH_SHORT ).show();
-                        (findViewById( R.id.includedDescriptionGuide )).setVisibility( View.VISIBLE );
-                        (findViewById( R.id.includedGuide )).setVisibility( View.GONE );
-
-                        final ImageButton return_button = findViewById( R.id.ReturnButton8 );
-                        return_button.setOnClickListener( new View.OnClickListener() {
-                            public void onClick(View v) {
-                                // Code here executes on main thread after user presses button
-                                (findViewById( R.id.includedDescriptionGuide )).setVisibility( View.GONE );
-                                (findViewById( R.id.includedGuide )).setVisibility( View.VISIBLE );
-                            }
-                        } );
-
-                            List <Feature> featureList = guideCollection.features();
-                            Feature feature = featureList.get( position );
-                            ImageView imageView = findViewById( R.id.imageGuide );
-
-                            String guide_name = feature.getStringProperty( "Nom" );
-                            String guide_descr = feature.getStringProperty( "Description" );
-                            String guide_adresse = feature.getStringProperty( "Adresse" );
-                            String guide_agreg = feature.getStringProperty( "Agrégation par le ministère" );
-                            String guide_assoc = feature.getStringProperty( "Association" );
-                            String guide_diplome = feature.getStringProperty( "Diplôme" );
-                            String guide_email = feature.getStringProperty( "Email" );
-                            String guide_langue1 = feature.getStringProperty( "Langue1" );
-                            String guide_langue2 = feature.getStringProperty( "Langue2" );
-                            String guide_tel = feature.getStringProperty( "Téléphone" );
-                            String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
-                            String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
-                            String guide_spec = feature.getStringProperty( "Spécialités" );
-
-                            TextView name_guide = findViewById( R.id.NomArea2 );
-                            TextView agreg_guide = findViewById( R.id.Agregation );
-                            TextView assoc_guide = findViewById( R.id.Association );
-                            TextView descr_guide = findViewById( R.id.DescriptionArea2 );
-                            TextView zones_guide = findViewById( R.id.ZonesPred );
-                            TextView spec_guide = findViewById( R.id.Specialités );
-                            TextView lan_guide = findViewById( R.id.CategorieArea2 );
-                            TextView grade_guide = findViewById( R.id.grade );
-                            TextView mail_guide = findViewById( R.id.mail );
-                            TextView tel_guide = findViewById( R.id.Tel );
-
-                            if(guide_name.contains( "Eddy" )){
-                                imageStorage = mStorageRef.child( "Guides/Eddy_Jasmin.jpg" );
-                            }
-                            else if(guide_name.contains( "Calvin" )){
-                                imageStorage = mStorageRef.child( "Guides/Andrianambinina_Franceschini_Calvin.jpg" );
-                            }
-                            else if(guide_name.contains( "Eltos" )){
-                                imageStorage = mStorageRef.child( "Guides/Eltos_Lazandrainy_Fahamaro.jpg" );
-                            }
-                            else if(guide_name.contains( "Fanahiantsoa" )){
-                                imageStorage = mStorageRef.child( "Guides/Fanahiantsoa_ElysÚ.jpg" );
-                            }
-                            else if(guide_name.contains( "Zoe" )){
-                                imageStorage = mStorageRef.child( "Guides/Nirindrainy_Mariot_Zoe_Nicholas.jpg" );
-                            }
-                            else if(guide_name.contains( "Johnson" )){
-                                imageStorage = mStorageRef.child( "Guides/Razafiantenaina_Johnson.jpg" );
-                            }
-                            else if(guide_name.contains( "Yvon" )){
-                                imageStorage = mStorageRef.child( "Guides/Romuald_Yvon_boris.jpg" );
-                            }
-                            else{
-                                imageStorage = mStorageRef.child( "Guides/guide1.jpg" );
-                            }
-
-
-                            Glide
-                                    .with( getApplicationContext() )
-                                    .asDrawable()
-                                    .load( imageStorage )
-                                    .apply( RequestOptions.overrideOf( 100,100 ) )
-                                    .into( imageView );
-
-                            name_guide.setText( guide_name );
-                            agreg_guide.setText("Agrégation par le ministère : " +  guide_agreg );
-                            assoc_guide.setText( "Association : " +guide_assoc );
-                            descr_guide.setText(guide_descr );
-                            zones_guide.setText( "Zone(s) de prédilection : "+ guide_predi1+", "+guide_predi2 );
-                            spec_guide.setText( "Spécialités : "+ guide_spec );
-                            lan_guide.setText( "Langue(s) : "+guide_langue1 +", "+ guide_langue2 );
-                            grade_guide.setText( "Diplôme : "+guide_diplome );
-                            mail_guide.setText( "Email : "+guide_email );
-                            tel_guide.setText( "Téléphone : "+guide_tel );
-
-                    }
-                } );
-
-                mRecyclerView1.setLayoutManager( new LinearLayoutManager( getApplicationContext() ) );
-                mRecyclerView1.setItemAnimator( new DefaultItemAnimator() );
-                mRecyclerView1.addItemDecoration( new DividerItemDecoration( MainActivity.this, LinearLayoutManager.VERTICAL ) );
-                mRecyclerView1.setAdapter( mAdapter );
-
-                //FAM disapear when click on guide section
-                (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.GONE );
-
-                //fonction to show the guide data
-                if (!mArrayList.isEmpty()) {
-                    Toast.makeText( getApplicationContext(), "List isn't empty", Toast.LENGTH_LONG ).show();
-                } else {
-                    prepareData();
-                }
+                //Fin OnClick(View v)
             }
         } );
 
@@ -652,10 +503,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             String guide_langue2 = feature.getStringProperty( "Langue2" );
             String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
             String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
-            contact = new ContactPOJO( getResources().getDrawable( R.drawable.gildas ), guide_name, guide_langue1+", "+guide_langue2, guide_predi1 +", "+guide_predi2 );
-            mArrayList.add( contact );
+          //  contact = new ContactPOJO( getResources().getDrawable( R.drawable.gildas ), guide_name, guide_langue1+", "+guide_langue2, guide_predi1 +", "+guide_predi2 );
+            //mArrayList.add( contact );
 
-            mAdapter.notifyDataSetChanged();
+            //mAdapter.notifyDataSetChanged();
         }
 
     }

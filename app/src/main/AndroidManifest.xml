@@ -4,10 +4,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!--
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
@@ -15,6 +11,7 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".GuideListActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".IntroActivity" />
-        <activity android:name=".Guide" />
         <activity android:name=".BaseActivity" />
         <activity
             android:name=".DirectionsActivity"
@@ -31,7 +27,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".Adapter.InfoWindowAdapterActivity" />
         <activity android:name=".HotelDescriptionActivity" />
-        <activity android:name=".AreaActivity"></activity>
+        <activity android:name=".AreaActivity" />
     </application>
 
 </manifest>

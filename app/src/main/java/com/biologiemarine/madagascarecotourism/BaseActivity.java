@@ -45,8 +45,6 @@ public class BaseActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "You clicked on the guides !",
                         Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(getApplicationContext(), Guide.class);
-                startActivity(intent);
             }
         });
     }

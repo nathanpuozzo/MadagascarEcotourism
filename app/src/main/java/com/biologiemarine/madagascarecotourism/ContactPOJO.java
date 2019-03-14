@@ -1,60 +1,42 @@
 package com.biologiemarine.madagascarecotourism;
 
-import android.graphics.drawable.Drawable;
-import android.media.Image;
-
 public class ContactPOJO {
 
-    private Drawable mPhoto;
-    private String mName;
-    private String mLocation;
-    private String mNote;
+    private String Nom,Image,Langues,Zones; //these names must match with the names in Firebase database
 
     public ContactPOJO(){} //default constructor
 
     //Argument Constructor
-    public ContactPOJO(Drawable photo, String name, String location, String note){
-        mPhoto = photo;
-        mName = name;
-        mLocation = location;
-        mNote = note;
 
+    public String getNom() {
+        return Nom;
     }
 
-
-    public String getmName() {
-
-        return mName;
+    public void setNom(String nom) {
+        Nom = nom;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public String getImage() {
+        return Image;
     }
 
-    public String getmLocation() {
-        return mLocation;
+    public void setImage(String image) {
+        Image = image;
     }
 
-    public void setmLocation(String mLocation) {
-
-        this.mLocation = mLocation;
-    }
-    public String getmNote() {
-
-        return mNote;
+    public String getLangues() {
+        return Langues;
     }
 
-    public void setmNote(String mNote) {
-
-        this.mNote = mNote;
+    public void setLangues(String langues) {
+        Langues = langues;
     }
 
-    public Drawable getmPhoto() {
-        return mPhoto;
+    public String getZones() {
+        return Zones;
     }
 
-    public void setmPhoto(Drawable mPhoto) {
-
-        this.mPhoto = mPhoto;
+    public void setZones(String zones) {
+        Zones = zones;
     }
 }
