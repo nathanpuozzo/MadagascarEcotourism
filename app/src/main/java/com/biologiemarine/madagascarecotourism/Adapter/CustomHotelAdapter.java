@@ -43,13 +43,13 @@ class MyParentsViewHolder extends RecyclerView.ViewHolder implements View.OnClic
     @Override
     public void onClick(View v) {
 
-        onRecyclerClickListener.onClick(v,getAdapterPosition(),false);
+        onRecyclerClickListener.onClick(v,getAdapterPosition());
     }
 
     @Override
     public boolean onLongClick(View v) {
 
-        onRecyclerClickListener.onClick(v,getAdapterPosition(),true);
+        onRecyclerClickListener.onClick(v,getAdapterPosition());
 
         return true;
     }
@@ -87,8 +87,8 @@ public class CustomHotelAdapter extends RecyclerView.Adapter<MyParentsViewHolder
         hotelViewHolder.hotel_location.setText(contact.getHotelLocation());
         hotelViewHolder.hotel_score.setText(contact.getHotelScore());
 
-        hotelViewHolder.setOnRecyclerClickListener((view, position1, isLongClick) ->
-                listener.onClick(view, position1,isLongClick));
+        hotelViewHolder.setOnRecyclerClickListener((view, position1) ->
+                listener.onClick(view, position1));
 
     }
 

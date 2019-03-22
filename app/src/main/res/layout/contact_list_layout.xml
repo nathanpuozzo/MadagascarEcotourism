@@ -4,15 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout">
 
-
+    <ProgressBar
+        android:id="@+id/ProgressCircle"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageGuide"
+        app:layout_constraintEnd_toEndOf="@+id/ImageGuide"
+        app:layout_constraintStart_toStartOf="@+id/ImageGuide"
+        app:layout_constraintTop_toTopOf="@+id/ImageGuide" />
     <ImageView
         android:id="@+id/ImageGuide"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,10 +62,15 @@
         android:id="@+id/ZonesGuide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="35dp"
-        android:text="TextView"
+        android:text="Tsimanampetsotse, Tsinjoriake"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
+        android:maxEms="10"
         android:textSize="14sp"
         android:textColor="@color/Gris"
         app:layout_constraintEnd_toEndOf="parent"

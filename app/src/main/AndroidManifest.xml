@@ -11,7 +11,12 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GuideListActivity"></activity>
+        <activity android:name=".GuideListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="Liste des guides">
+
+        </activity>
+        <activity android:name=".GuideDetailsActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

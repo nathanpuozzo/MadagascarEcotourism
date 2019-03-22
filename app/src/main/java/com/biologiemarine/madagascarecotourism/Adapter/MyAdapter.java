@@ -13,7 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.biologiemarine.madagascarecotourism.ContactPOJO;
+import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
+import com.biologiemarine.madagascarecotourism.OnRecyclerClickListener;
 import com.biologiemarine.madagascarecotourism.R;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Transformation;
@@ -21,12 +22,16 @@ import com.squareup.picasso.Transformation;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
+    private OnRecyclerClickListener onRecyclerClickListener;
     private List<ContactPOJO> list;
     Context context;
-    public MyAdapter(List<ContactPOJO> list, Context context){
+
+
+    public MyAdapter(List <ContactPOJO> list){
+
 
         this.list = list;
-        this.context = context;
+
 
     }
 
@@ -34,7 +39,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     @Override
     public MyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.contact_list_layout,viewGroup,false);
-        return new ViewHolder(view);
+        ViewHolder vh = new ViewHolder( view, onRecyclerClickListener);
+        return vh;
     }
 
     @Override
@@ -44,6 +50,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         viewHolder.LanguesView.setText(ld.getLangues());
         viewHolder.ZonesView.setText(ld.getZones());
         Picasso.get().load(ld.getImage()).transform( new CircleTransform() ).into( viewHolder.imageView );
+
+
     }
 
     @Override
@@ -51,22 +59,42 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         return list.size();
     }
 
+    public void setOnRecyclerClickListener(OnRecyclerClickListener listener){
+        this.onRecyclerClickListener=listener;
+    }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
 
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        private OnRecyclerClickListener mListener;
         View mView;
-        private TextView NomView,LanguesView,ZonesView;
-        private ImageView imageView;
+        public TextView NomView,LanguesView,ZonesView;
+        public ImageView imageView;
 
-        public ViewHolder(@NonNull View itemView) {
+
+        public ViewHolder(@NonNull View itemView, OnRecyclerClickListener listener) {
             super( itemView );
             mView = itemView;
+            this.mListener = listener;
 
             //Views
             NomView = (TextView) mView.findViewById( R.id.NomGuide );
             LanguesView =(TextView) mView.findViewById( R.id.LanguesGuide );
             ZonesView =(TextView) mView.findViewById( R.id.ZonesGuide );
             imageView = mView.findViewById( R.id.ImageGuide );
+
+            //Click on Item
+            itemView.setOnClickListener( this );
+        }
+
+        @Override
+        public void onClick(View view) {
+
+            if(mListener != null){
+                mListener.onClick( view,getAdapterPosition() );
+
+            }
+
         }
     }
 

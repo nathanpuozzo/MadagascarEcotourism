@@ -33,8 +33,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
+import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
 import com.bumptech.glide.Glide;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
@@ -68,7 +68,6 @@ import com.mapbox.mapboxsdk.style.layers.CircleLayer;
 import com.mapbox.mapboxsdk.style.layers.FillLayer;
 import com.mapbox.mapboxsdk.style.layers.Layer;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
-import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.mapbox.mapboxsdk.style.sources.Source;
 import com.mapbox.mapboxsdk.style.sources.VectorSource;
@@ -261,7 +260,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 areaAdapter = new CustomHotelAdapter( areaArrayList, new OnRecyclerClickListener() {
                     @Override
-                    public void onClick(View view, int position, boolean isLongClick) {
+                    public void onClick(View view, int position) {
 
                         (findViewById( R.id.includedActivityArea )).setVisibility( View.VISIBLE );
                         (findViewById( R.id.includedHotel )).setVisibility( View.GONE );
@@ -362,7 +361,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 hotelAdapter = new CustomHotelAdapter( hotelArrayList, new OnRecyclerClickListener() {
                     @Override
-                    public void onClick(View view, int position, boolean isLongClick) {
+                    public void onClick(View view, int position) {
                         List <Feature> featureList = featureCollection.features();
                         Feature feature = featureList.get( position );
                         Intent intent = new Intent( getApplicationContext(), HotelDescriptionActivity.class );
@@ -425,7 +424,28 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         //Guides
         floatingActionButton3.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
+/*
+                Source guideSource = new GeoJsonSource( GUIDE_LAYER_ID,"mapbox://nathanpuozzo.2zrilie4" );
+                List<Feature> guideFeatures = ((GeoJsonSource) guideSource).querySourceFeatures( get( "guides" ) );
+                for(Feature feature : guideFeatures) {
 
+                    String guide_name = feature.getStringProperty( "Nom" );
+                    String guide_descr = feature.getStringProperty( "Description" );
+                    String guide_adresse = feature.getStringProperty( "Adresse" );
+                    String guide_agreg = feature.getStringProperty( "Agrégation par le ministère" );
+                    String guide_assoc = feature.getStringProperty( "Association" );
+                    String guide_diplome = feature.getStringProperty( "Diplôme" );
+                    String guide_email = feature.getStringProperty( "Email" );
+                    String guide_langue1 = feature.getStringProperty( "Langue1" );
+                    String guide_langue2 = feature.getStringProperty( "Langue2" );
+                    String guide_tel = feature.getStringProperty( "Téléphone" );
+                    String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
+                    String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
+                    String guide_spec = feature.getStringProperty( "Spécialités" );
+
+                }
+                Log.d( TAG,"les features sont "+guideFeatures );
+*/
                 //Go to GuideActivityList
                 Intent intent = new Intent( getApplicationContext(), GuideListActivity.class );
                 startActivity( intent );
@@ -540,7 +560,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(MapboxMap mapboxMap) {
         map = mapboxMap;
-        enableLocation();
+
+        //Activer la localisation
+       enableLocation();
+
         new LoadGeoJsonDataTask( this ).execute();
 
         VectorSource vectorSource = new VectorSource( AREA_LAYER_ID, "mapbox://nathanpuozzo.8j95651c" );
@@ -683,7 +706,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
                 } );
                 for(Feature feature : guidesFeatures){
-                    ImageView imageView = findViewById( R.id.imageGuide );
+                    ImageView imageView = findViewById( R.id.imageDescrGuide );
 
                     String guide_name = feature.getStringProperty( "Nom" );
                     String guide_descr = feature.getStringProperty( "Description" );
@@ -699,16 +722,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
                     String guide_spec = feature.getStringProperty( "Spécialités" );
 
-                    TextView name_guide = findViewById( R.id.NomArea2 );
+                    TextView name_guide = findViewById( R.id.NomDescrGuide );
                     TextView agreg_guide = findViewById( R.id.Agregation );
                     TextView assoc_guide = findViewById( R.id.Association );
-                    TextView descr_guide = findViewById( R.id.DescriptionArea2 );
+                    TextView descr_guide = findViewById( R.id.DescriptionGuide );
                     TextView zones_guide = findViewById( R.id.ZonesPred );
                     TextView spec_guide = findViewById( R.id.Specialités );
-                    TextView lan_guide = findViewById( R.id.CategorieArea2 );
-                    TextView grade_guide = findViewById( R.id.grade );
-                    TextView mail_guide = findViewById( R.id.mail );
-                    TextView tel_guide = findViewById( R.id.Tel );
+                    TextView lan_guide = findViewById( R.id.LanguesDescrGuide );
+                    TextView grade_guide = findViewById( R.id.gradeGuide );
+                    TextView mail_guide = findViewById( R.id.mailGuide );
+                    TextView tel_guide = findViewById( R.id.TelGuide );
 
                     if(guide_name.contains( "Eddy" )){
                         imageStorage = mStorageRef.child( "Guides/Eddy_Jasmin.jpg" );
@@ -844,7 +867,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setupSource();
         setUpImage();
         setUpMarkerLayer();
-        setupClusterSource();
+       // setupClusterSource();
         setUpInfoWindowLayer();
 
     }
@@ -853,9 +876,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     /**
      * Adds the GeoJSON source to the map
      */
-    //TODO clusters : régler soucis de click et reconnaissance des features
+
     private void setupSource() {
-        source = new GeoJsonSource( geojsonSourceId, featureCollection,new GeoJsonOptions().withCluster( true ).withClusterMaxZoom( 14 ).withClusterRadius( 50 ) );
+        source = new GeoJsonSource( geojsonSourceId, featureCollection );
         map.addSource( source );
     }
 
@@ -875,14 +898,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             source.setGeoJson( featureCollection );
         }
     }
-
+//TODO : getminzoom for the marker Hotel
     /**
      * Setup a layer with maki icons, eg. west coast city.
      */
     private void setUpMarkerLayer() {
-        map.addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false ) ) );
+        map.addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false ) ));
     }
-//TODO:Régler souci de cluster
+
     /**
      * Setup a Cluster source.
      */
