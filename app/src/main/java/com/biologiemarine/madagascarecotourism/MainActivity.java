@@ -18,10 +18,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -35,6 +32,7 @@ import android.widget.Toast;
 
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
 import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
+import com.biologiemarine.madagascarecotourism.Models.HotelsPOJO;
 import com.bumptech.glide.Glide;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
@@ -235,325 +233,28 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         //Aire protégées
-        floatingActionButton1.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
+        floatingActionButton1.setOnClickListener( v -> {
 
-                final ImageView imageView = findViewById( R.id.imageView7 );
-                imageView.setImageResource( R.drawable.ic_terrain_24dp );
+            //TODO : Aires protégées
 
-                final TextView textView = findViewById( R.id.guideText6 );
-                textView.setText( "Aires protégées" );
-
-                (findViewById( R.id.includedHotel )).setVisibility( View.VISIBLE );
-
-
-                final ImageButton return_button = findViewById( R.id.ReturnButton2 );
-                return_button.setOnClickListener( new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Code here executes on main thread after user presses button
-                        (findViewById( R.id.includedHotel )).setVisibility( View.GONE );
-                        (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
-                    }
-                } );
-
-                mRecyclerView3 = findViewById( R.id.recyclerViewHotel );
-
-                areaAdapter = new CustomHotelAdapter( areaArrayList, new OnRecyclerClickListener() {
-                    @Override
-                    public void onClick(View view, int position) {
-
-                        (findViewById( R.id.includedActivityArea )).setVisibility( View.VISIBLE );
-                        (findViewById( R.id.includedHotel )).setVisibility( View.GONE );
-
-                        List <Feature> featureList = areaCollection.features();
-                        Feature feature = featureList.get( position );
-                        String area_name = feature.getStringProperty( "SHORT_NAME" );
-                        String area_descr = feature.getStringProperty( "Description" );
-                        String type = feature.getStringProperty( "Type" );
-                        ImageView ImageArea = findViewById( R.id.imageArea );
-
-                        //TODO : connect Firebase with Glide (ou Picasso) and compare name of pictures with name of area
-
-                        if(area_name.contains( "Isalo" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Isalo.jpg" );
-                        }
-                        else if(area_name.contains( "Ambohitantely" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Ambohitantely.jpg" );
-                        }else if(area_name.contains( "Bemaraha" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Bemaraha.jpg" );
-                        }else if(area_name.contains( "Beza Mahafaly" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Beza_Mahafaly.jpg" );
-                        }else if(area_name.contains( "Cap Sainte Marie" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/cap saiten_marie.jpg" );
-                        }else if(area_name.contains( "Lokobe" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Lokobe.jpg" );
-                        }else if(area_name.contains( "Manongarivo" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Manongarivo.jpg" );
-                        }else if(area_name.contains( "Mikea" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Mikea.jpg" );
-                        }else if(area_name.contains( "Ranomafana" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Ranomafana.jpg" );
-                        }else if(area_name.contains( "Tsimanampesotse" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/Tsimanampetsotse.jpg" );
-                        }
-                        else if(area_name.contains( "Zombitse" )){
-                            imageStorage = mStorageRef.child( "AiresProtegees/zombitse_Vohibasia.jpg" );
-                        }
-                        else{
-                            imageStorage = mStorageRef.child( "AiresProtegees/area1.jpg" );
-                        }
-                        Glide.with( getApplicationContext() ).load( imageStorage ).into( ImageArea );
-                        TextView name_area = findViewById( R.id.NomArea );
-                        name_area.setText( area_name );
-
-                        TextView descr_area = findViewById( R.id.DescriptionArea );
-                        descr_area.setText( area_descr );
-
-                        TextView cat_area = findViewById( R.id.CategorieArea );
-                        cat_area.setText( type );
-
-                        final ImageButton return_button = findViewById( R.id.ReturnButton3 );
-                        return_button.setOnClickListener( new View.OnClickListener() {
-                            public void onClick(View v) {
-                                // Code here executes on main thread after user presses button
-                                (findViewById( R.id.includedActivityArea )).setVisibility( View.GONE );
-                                (findViewById( R.id.includedHotel )).setVisibility( View.VISIBLE );
-                            }
-                        } );
-                    }
-                } );
-
-                mRecyclerView3.setLayoutManager( new LinearLayoutManager( getApplicationContext() ) );
-                mRecyclerView3.setItemAnimator( new DefaultItemAnimator() );
-                //mRecyclerView2.addItemDecoration(new DividerItemDecoration(MainActivity.this, LinearLayoutManager.VERTICAL));
-                mRecyclerView3.setAdapter( areaAdapter );
-
-                //FAM disapear when click on guide section
-                (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.GONE );
-
-                //fonction to show the guide data
-                if (!areaArrayList.isEmpty()) {
-
-                } else {
-
-                    areaData();
-                }
-            }
         } );
 
         //Hotels
-        floatingActionButton2.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
+        floatingActionButton2.setOnClickListener( v -> {
 
+            Intent intent = new Intent( getApplicationContext(), HotelListActivity.class );
+            startActivity( intent );
 
-                (findViewById( R.id.includedHotel )).setVisibility( View.VISIBLE );
-
-                final ImageButton return_button = findViewById( R.id.ReturnButton2 );
-                return_button.setOnClickListener( new View.OnClickListener() {
-                    public void onClick(View v) {
-                        // Code here executes on main thread after user presses button
-                        (findViewById( R.id.includedHotel )).setVisibility( View.GONE );
-                        (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
-                    }
-                } );
-
-                mRecyclerView2 = findViewById( R.id.recyclerViewHotel );
-
-                hotelAdapter = new CustomHotelAdapter( hotelArrayList, new OnRecyclerClickListener() {
-                    @Override
-                    public void onClick(View view, int position) {
-                        List <Feature> featureList = featureCollection.features();
-                        Feature feature = featureList.get( position );
-                        Intent intent = new Intent( getApplicationContext(), HotelDescriptionActivity.class );
-                        String name = feature.getStringProperty( "hotel" );
-                        String nuit = feature.getStringProperty( "prix" );
-                        String ipe = feature.getStringProperty( "ipe" );
-
-                        String energie = feature.getStringProperty( "energie verte (sur 2)" );
-                        String dechets = feature.getStringProperty( "traitement de dechets  (sur 2)" );
-                        String communaute = feature.getStringProperty( "communaute  (sur 2)" );
-                        String salaire = feature.getStringProperty( "salaire_equitable(sur 2)" );
-
-                        String adresse = feature.getStringProperty( "adresse" );
-                        String tel = feature.getStringProperty( "tel" );
-                        String mail = feature.getStringProperty( "email" );
-                        String site = feature.getStringProperty( "site web" );
-
-                        String descr = feature.getStringProperty( "description" );
-                        String booking = feature.getStringProperty( "booking" );
-                        String trip = feature.getStringProperty( "trip_advisor" );
-
-                        intent.putExtra( "name", name );
-                        intent.putExtra( "nuit", nuit );
-                        intent.putExtra( "ipe", ipe );
-
-                        intent.putExtra( "energie", energie );
-                        intent.putExtra( "dechets", dechets );
-                        intent.putExtra( "communaute", communaute );
-                        intent.putExtra( "salaire", salaire );
-
-                        intent.putExtra( "adresse", adresse );
-                        intent.putExtra( "tel", tel );
-                        intent.putExtra( "mail", mail );
-                        intent.putExtra( "site", site );
-                        intent.putExtra( "descr", descr );
-                        intent.putExtra( "trip", trip );
-                        intent.putExtra( "booking", booking );
-                        startActivity( intent );
-
-                    }
-                } );
-
-                mRecyclerView2.setLayoutManager( new LinearLayoutManager( getApplicationContext() ) );
-                mRecyclerView2.setItemAnimator( new DefaultItemAnimator() );
-                //mRecyclerView2.addItemDecoration(new DividerItemDecoration(MainActivity.this, LinearLayoutManager.VERTICAL));
-                mRecyclerView2.setAdapter( hotelAdapter );
-
-                //FAM disapear when click on guide section
-                (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.GONE );
-
-                //fonction to show the guide data
-                if (!hotelArrayList.isEmpty()) {
-                    Toast.makeText( getApplicationContext(), "List isn't empty", Toast.LENGTH_LONG ).show();
-                } else {
-                    hotelData();
-                }
-            }
         } );
 
         //Guides
-        floatingActionButton3.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
-/*
-                Source guideSource = new GeoJsonSource( GUIDE_LAYER_ID,"mapbox://nathanpuozzo.2zrilie4" );
-                List<Feature> guideFeatures = ((GeoJsonSource) guideSource).querySourceFeatures( get( "guides" ) );
-                for(Feature feature : guideFeatures) {
+        floatingActionButton3.setOnClickListener( v -> {
 
-                    String guide_name = feature.getStringProperty( "Nom" );
-                    String guide_descr = feature.getStringProperty( "Description" );
-                    String guide_adresse = feature.getStringProperty( "Adresse" );
-                    String guide_agreg = feature.getStringProperty( "Agrégation par le ministère" );
-                    String guide_assoc = feature.getStringProperty( "Association" );
-                    String guide_diplome = feature.getStringProperty( "Diplôme" );
-                    String guide_email = feature.getStringProperty( "Email" );
-                    String guide_langue1 = feature.getStringProperty( "Langue1" );
-                    String guide_langue2 = feature.getStringProperty( "Langue2" );
-                    String guide_tel = feature.getStringProperty( "Téléphone" );
-                    String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
-                    String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
-                    String guide_spec = feature.getStringProperty( "Spécialités" );
+            Intent intent = new Intent( getApplicationContext(), GuideListActivity.class );
+            startActivity( intent );
 
-                }
-                Log.d( TAG,"les features sont "+guideFeatures );
-*/
-                //Go to GuideActivityList
-                Intent intent = new Intent( getApplicationContext(), GuideListActivity.class );
-                startActivity( intent );
-
-                //Fin OnClick(View v)
-            }
+            //Fin OnClick(View v)
         } );
-
-    }
-
-    private void areaData() {
-        HotelsPOJO area = null;
-        int left = mapView.getLeft();
-        int top = mapView.getTop();
-        int right = mapView.getRight();
-        int bottom = mapView.getBottom();
-        RectF rectF = new RectF( left, top, right, bottom );
-        List <Feature> areaFeatures = map.queryRenderedFeatures( rectF, AREA_LAYER_ID );
-        areaCollection = FeatureCollection.fromFeatures( areaFeatures );
-
-
-        for (Feature feature : areaCollection.features()) {
-            String area_name = feature.getStringProperty( "SHORT_NAME" );
-            String type = feature.getStringProperty( "Type" );
-            if(area_name.contains( "Isalo" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Isalo.jpg" );
-            }
-            else if(area_name.contains( "Ambohitantely" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Ambohitantely.jpg" );
-            }else if(area_name.contains( "Bemaraha" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Bemaraha.jpg" );
-            }else if(area_name.contains( "Beza Mahafaly" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Beza_Mahafaly.jpg" );
-            }else if(area_name.contains( "Cap Sainte Marie" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/cap saiten_marie.jpg" );
-            }else if(area_name.contains( "Lokobe" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Lokobe.jpg" );
-            }else if(area_name.contains( "Manongarivo" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Manongarivo.jpg" );
-            }else if(area_name.contains( "Mikea" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Mikea.jpg" );
-            }else if(area_name.contains( "Ranomafana" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Ranomafana.jpg" );
-            }else if(area_name.contains( "Tsimanampesotse" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/Tsimanampetsotse.jpg" );
-            }
-            else if(area_name.contains( "Zombitse" )){
-                imageStorage = mStorageRef.child( "AiresProtegees/zombitse_Vohibasia.jpg" );
-            }
-            else{
-                imageStorage = mStorageRef.child( "AiresProtegees/area1.jpg" );
-            }
-
-
-
-            area = new HotelsPOJO(getResources().getDrawable( R.drawable.area1 ), "", area_name, type );
-
-            areaArrayList.add( area );
-        }
-    }
-
-    private void prepareData() {
-        ContactPOJO contact = null;
-        int left = mapView.getLeft();
-        int top = mapView.getTop();
-        int right = mapView.getRight();
-        int bottom = mapView.getBottom();
-        RectF rectF = new RectF( left, top, right, bottom );
-        List <Feature> guideFeatures = map.queryRenderedFeatures( rectF, GUIDE_LAYER_ID );
-        guideCollection = FeatureCollection.fromFeatures( guideFeatures );
-
-        for (Feature feature : guideCollection.features()) {
-            String guide_name = feature.getStringProperty( "Nom" );
-            String guide_langue1 = feature.getStringProperty( "Langue1" );
-            String guide_langue2 = feature.getStringProperty( "Langue2" );
-            String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
-            String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
-          //  contact = new ContactPOJO( getResources().getDrawable( R.drawable.gildas ), guide_name, guide_langue1+", "+guide_langue2, guide_predi1 +", "+guide_predi2 );
-            //mArrayList.add( contact );
-
-            //mAdapter.notifyDataSetChanged();
-        }
-
-    }
-
-    //Lister tous les hôtels
-    private void hotelData() {
-        HotelsPOJO hotel = null;
-
-
-        for (Feature feature : featureCollection.features()) {
-            String name = feature.getStringProperty( PROPERTY_TITLE );
-            String ipe = feature.getStringProperty( "ipe" );
-            String nuit = feature.getStringProperty( "prix" );
-            //TODO : Firebase + glide Hôtels
-
-            if(name.contains( "Hyppocampo" )){
-                hotel = new HotelsPOJO( getResources().getDrawable( R.drawable.hotel01 ), "IPE : " + ipe, name, "Prix d'une nuit : " + nuit );
-            }
-            else if(name.contains( "Bakuba" )){
-                hotel = new HotelsPOJO( getResources().getDrawable( R.drawable.hotel02 ), "IPE : " + ipe, name, "Prix d'une nuit : " + nuit );
-            }
-            else {
-                hotel = new HotelsPOJO( getResources().getDrawable( R.drawable.hotel00 ), "IPE : " + ipe, name, "Prix d'une nuit : " + nuit );
-            }
-
-            hotelArrayList.add( hotel );
-        }
 
     }
 
@@ -696,21 +397,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 }
             }
+
             else if(!guidesFeatures.isEmpty()){
-                Log.d( TAG,"c'est ok messire" );
-                (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.GONE );
-                (findViewById( R.id.includedDescriptionGuide )).setVisibility( View.VISIBLE );
-                final ImageButton return_button = findViewById( R.id.ReturnButton8 );
-                return_button.setOnClickListener( v -> {
-                    (findViewById( R.id.includedDescriptionGuide )).setVisibility( View.GONE );
-                    (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
-                } );
+
                 for(Feature feature : guidesFeatures){
-                    ImageView imageView = findViewById( R.id.imageDescrGuide );
 
                     String guide_name = feature.getStringProperty( "Nom" );
                     String guide_descr = feature.getStringProperty( "Description" );
-                    String guide_adresse = feature.getStringProperty( "Adresse" );
                     String guide_agreg = feature.getStringProperty( "Agrégation par le ministère" );
                     String guide_assoc = feature.getStringProperty( "Association" );
                     String guide_diplome = feature.getStringProperty( "Diplôme" );
@@ -722,55 +415,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
                     String guide_spec = feature.getStringProperty( "Spécialités" );
 
-                    TextView name_guide = findViewById( R.id.NomDescrGuide );
-                    TextView agreg_guide = findViewById( R.id.Agregation );
-                    TextView assoc_guide = findViewById( R.id.Association );
-                    TextView descr_guide = findViewById( R.id.DescriptionGuide );
-                    TextView zones_guide = findViewById( R.id.ZonesPred );
-                    TextView spec_guide = findViewById( R.id.Specialités );
-                    TextView lan_guide = findViewById( R.id.LanguesDescrGuide );
-                    TextView grade_guide = findViewById( R.id.gradeGuide );
-                    TextView mail_guide = findViewById( R.id.mailGuide );
-                    TextView tel_guide = findViewById( R.id.TelGuide );
+                    Intent intent = new Intent( getApplicationContext(),GuideDetailsActivity.class );
+                    intent.putExtra( "guide_name",guide_name );
+                    intent.putExtra( "guide_descr",guide_descr );
+                    intent.putExtra( "guide_agreg",guide_agreg );
+                    intent.putExtra( "guide_assoc",guide_assoc );
+                    intent.putExtra( "guide_diplome",guide_diplome );
+                    intent.putExtra( "guide_email",guide_email );
+                    intent.putExtra( "guide_langue1",guide_langue1 );
+                    intent.putExtra( "guide_langue2",guide_langue2);
+                    intent.putExtra( "guide_tel",guide_tel );
+                    intent.putExtra( "guide_predil1",guide_predi1 );
+                    intent.putExtra( "guide_predil2",guide_predi2 );
+                    intent.putExtra( "guide_spec",guide_spec );
+                    startActivity( intent );
 
-                    if(guide_name.contains( "Eddy" )){
-                        imageStorage = mStorageRef.child( "Guides/Eddy_Jasmin.jpg" );
-                    }
-                    else if(guide_name.contains( "Calvin" )){
-                        imageStorage = mStorageRef.child( "Guides/Andrianambinina_Franceschini_Calvin.jpg" );
-                    }
-                    else if(guide_name.contains( "Eltos" )){
-                        imageStorage = mStorageRef.child( "Guides/Eltos_Lazandrainy_Fahamaro.jpg" );
-                    }
-                    else if(guide_name.contains( "Fanahiantsoa" )){
-                        imageStorage = mStorageRef.child( "Guides/Fanahiantsoa_ElysÚ.jpg" );
-                    }
-                    else if(guide_name.contains( "Zoe" )){
-                        imageStorage = mStorageRef.child( "Guides/Nirindrainy_Mariot_Zoe_Nicholas.jpg" );
-                    }
-                    else if(guide_name.contains( "Johnson" )){
-                        imageStorage = mStorageRef.child( "Guides/Razafiantenaina_Johnson.jpg" );
-                    }
-                    else if(guide_name.contains( "Yvon" )){
-                        imageStorage = mStorageRef.child( "Guides/Romuald_Yvon_boris.jpg" );
-                    }
-                    else{
-                        imageStorage = mStorageRef.child( "Guides/guide1.jpg" );
-                    }
-
-
-                    Glide.with( getApplicationContext() ).load( imageStorage ).into( imageView );
-
-                    name_guide.setText( guide_name );
-                    agreg_guide.setText("Agrégation par le ministère : " +  guide_agreg );
-                    assoc_guide.setText( "Association : " +guide_assoc );
-                    descr_guide.setText(guide_descr );
-                    zones_guide.setText( "Zone(s) de prédilection : "+ guide_predi1+", "+guide_predi2 );
-                    spec_guide.setText( "Spécialités : "+ guide_spec );
-                    lan_guide.setText( "Langue(s) : "+guide_langue1 +", "+ guide_langue2 );
-                    grade_guide.setText( "Diplôme : "+guide_diplome );
-                    mail_guide.setText( "Email : "+guide_email );
-                    tel_guide.setText( "Téléphone : "+guide_tel );
                 }
             }
             return true;
@@ -876,7 +535,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     /**
      * Adds the GeoJSON source to the map
      */
-
     private void setupSource() {
         source = new GeoJsonSource( geojsonSourceId, featureCollection );
         map.addSource( source );
@@ -898,12 +556,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             source.setGeoJson( featureCollection );
         }
     }
-//TODO : getminzoom for the marker Hotel
     /**
      * Setup a layer with maki icons, eg. west coast city.
      */
     private void setUpMarkerLayer() {
-        map.addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false ) ));
+        map.addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false )));
     }
 
     /**

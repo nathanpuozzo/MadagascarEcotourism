@@ -9,7 +9,7 @@ public class MyLayoutManager extends LinearLayoutManager {
 
     public MyLayoutManager(Context context) {
         super(context);
-        // TODO Auto-generated constructor stub
+
         isAutoMeasureEnabled();
 
     }
@@ -18,7 +18,7 @@ public class MyLayoutManager extends LinearLayoutManager {
     @Override
     public void onMeasure(RecyclerView.Recycler recycler, RecyclerView.State state, int widthSpec,
                           int heightSpec) {
-        //TODO : error on next line
+
         if(!isAutoMeasureEnabled()) {
             View view = recycler.getViewForPosition( 0 );
 

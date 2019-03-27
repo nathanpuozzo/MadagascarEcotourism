@@ -31,6 +31,7 @@
             android:label="@string/title_activity_directions"
             android:theme="@style/AppTheme" />
         <activity android:name=".Adapter.InfoWindowAdapterActivity" />
+        <activity android:name=".HotelListActivity"/>
         <activity android:name=".HotelDescriptionActivity" />
         <activity android:name=".AreaActivity" />
     </application>

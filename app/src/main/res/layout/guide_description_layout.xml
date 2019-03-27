@@ -76,7 +76,21 @@
 
 
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
 
+                <ProgressBar
+                    android:id="@+id/ProgressCircleDetails"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageDescrGuide"
+                    app:layout_constraintEnd_toEndOf="@+id/imageDescrGuide"
+                    app:layout_constraintStart_toStartOf="@+id/imageDescrGuide"
+                    app:layout_constraintTop_toTopOf="@+id/imageDescrGuide" />
 
             <ImageView
                 android:id="@+id/imageDescrGuide"
@@ -85,6 +99,9 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/guide1"
                 />
+
+            </RelativeLayout>
+
             <TextView
                 android:id="@+id/NomDescrGuide"
                 android:layout_width="match_parent"
@@ -186,6 +203,7 @@
                 android:textAlignment="center"
                 android:layout_marginTop="5dp"
                 />
+
 
 
         </LinearLayout>

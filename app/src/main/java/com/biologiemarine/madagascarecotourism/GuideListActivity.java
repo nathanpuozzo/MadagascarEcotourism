@@ -53,12 +53,7 @@ public class GuideListActivity extends AppCompatActivity {
 
         //Button to return to MainActivity
         final ImageButton button = findViewById( R.id.ReturnButton );
-        button.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent( getApplicationContext(), MainActivity.class );
-                startActivity( intent );
-            }
-        } );
+        button.setOnClickListener( v -> finish() );
 
         //ProgressCircle for images
         progressBar = findViewById( R.id.ProgressCircle );

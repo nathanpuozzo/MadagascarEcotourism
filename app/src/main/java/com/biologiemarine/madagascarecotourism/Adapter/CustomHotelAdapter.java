@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.biologiemarine.madagascarecotourism.HotelsPOJO;
+import com.biologiemarine.madagascarecotourism.Models.HotelsPOJO;
 import com.biologiemarine.madagascarecotourism.OnRecyclerClickListener;
 import com.biologiemarine.madagascarecotourism.R;
 
@@ -29,7 +29,7 @@ class MyParentsViewHolder extends RecyclerView.ViewHolder implements View.OnClic
         Log.v("ViewHolder","in View Holder");
         hotel_photo = itemView.findViewById(R.id.HotelPhoto);
         hotel_name = itemView.findViewById(R.id.HotelName);
-        hotel_location = itemView.findViewById(R.id.HotelLocation);
+        hotel_location = itemView.findViewById(R.id.HotelPrix);
         hotel_score = itemView.findViewById(R.id.HotelScore);
         itemView.setOnClickListener(this);
         itemView.setOnLongClickListener(this);
@@ -82,11 +82,12 @@ public class CustomHotelAdapter extends RecyclerView.Adapter<MyParentsViewHolder
     public void onBindViewHolder( MyParentsViewHolder hotelViewHolder,int position) {
         Log.v("BindViewHolder", "in onBindViewHolder");
         HotelsPOJO contact = hotelArrayList.get(position);
-        hotelViewHolder.hotel_photo.setImageDrawable(contact.getHotelPhoto());
+        /*
+        hotelViewHolder.hotel_photo.setImageDrawable(contact.getImage());
         hotelViewHolder.hotel_name.setText(contact.getHotelName());
         hotelViewHolder.hotel_location.setText(contact.getHotelLocation());
         hotelViewHolder.hotel_score.setText(contact.getHotelScore());
-
+*/
         hotelViewHolder.setOnRecyclerClickListener((view, position1) ->
                 listener.onClick(view, position1));
 

@@ -29,15 +29,27 @@
 
     </LinearLayout>
 -->
+    <ProgressBar
+        android:id="@+id/ProgressCircleHotel"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/HotelPhoto"
+        app:layout_constraintEnd_toEndOf="@+id/HotelPhoto"
+        app:layout_constraintStart_toStartOf="@+id/HotelPhoto"
+        app:layout_constraintTop_toTopOf="@+id/HotelPhoto" />
+
     <ImageView
         android:id="@+id/HotelPhoto"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="135dp"
+        android:adjustViewBounds="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/hotel01" />
+        app:srcCompat="@drawable/isalo" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -61,7 +73,7 @@
         tools:textSize="20sp" />
 
     <TextView
-        android:id="@+id/HotelLocation"
+        android:id="@+id/HotelPrix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
