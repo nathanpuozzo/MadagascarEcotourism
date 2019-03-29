@@ -73,17 +73,32 @@
 
 
 </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
+        <ProgressBar
+            android:id="@+id/ProgressCircleHotelDetails"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageHotel"
+            app:layout_constraintEnd_toEndOf="@+id/imageHotel"
+            app:layout_constraintStart_toStartOf="@+id/imageHotel"
+            app:layout_constraintTop_toTopOf="@+id/imageHotel" />
     <ImageView
         android:id="@+id/imageHotel"
         android:layout_width="match_parent"
         android:layout_height="500px"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/hotel01"
         android:layout_marginTop="-5dp"
 
         />
 
+</RelativeLayout>
     <TextView
         android:id="@+id/NomHotel"
         android:layout_width="match_parent"
@@ -99,9 +114,8 @@
         android:text="Sur la route du port, dans un quartier un peu éloigné à l'écart du centre-ville, cet établissement de charme qui se distingue par son architecture moderne à charpente métallique compte également les plus confrotables de la ville.
 La piscine et l'atmosphère chic et décontractée du bar-restaurant donnent le ton de cette adresse, qui ne compte que 8 chambres et 3 suites, décorées de boiserie, sculptures et beaux voilages, avec clim et TV par satellite.
 Cartes VISA et Mastercard acceptées. "
-        android:gravity="center|top"
         android:textStyle="italic"
-        android:textAlignment="center"
+        android:layout_margin="5dp"
         android:layout_marginTop="5dp"
         />
 

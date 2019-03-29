@@ -33,6 +33,7 @@
         <activity android:name=".Adapter.InfoWindowAdapterActivity" />
         <activity android:name=".HotelListActivity"/>
         <activity android:name=".HotelDescriptionActivity" />
+        <activity android:name=".AireListActivity"/>
         <activity android:name=".AreaActivity" />
     </application>
 

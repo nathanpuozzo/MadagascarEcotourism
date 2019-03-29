@@ -13,7 +13,6 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -22,9 +21,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -33,7 +29,6 @@ import android.widget.Toast;
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
 import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
 import com.biologiemarine.madagascarecotourism.Models.HotelsPOJO;
-import com.bumptech.glide.Glide;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.firebase.storage.FirebaseStorage;
@@ -235,7 +230,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         //Aire protégées
         floatingActionButton1.setOnClickListener( v -> {
 
-            //TODO : Aires protégées
+            Intent intent = new Intent( getApplicationContext(), AireListActivity.class );
+            startActivity( intent );
 
         } );
 
@@ -327,73 +323,38 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         map.selectMarker( featureMarker );
         map.setOnInfoWindowClickListener( featureMarker -> {
             if(!areaFeatures.isEmpty()) {
-                (findViewById( R.id.includedActivityArea )).setVisibility( View.VISIBLE );
-                (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.GONE );
-                final ImageButton return_button = findViewById( R.id.ReturnButton3 );
-                return_button.setOnClickListener( v -> {
-                    // Code here executes on main thread after user presses button
-                    (findViewById( R.id.includedActivityArea )).setVisibility( View.GONE );
-                    (findViewById( R.id.material_design_android_floating_action_menu )).setVisibility( View.VISIBLE );
-                } );
 
                 List <Feature> areaFeatures1 = map.queryRenderedFeatures( rectF, AREA_LAYER_ID );
                 for (Feature feature : areaFeatures1) {
+
                     String area_name = feature.getStringProperty( "SHORT_NAME" );
                     String area_descr = feature.getStringProperty( "Description" );
-                    String type = feature.getStringProperty( "Type" );
-                    String lien = feature.getStringProperty( "Lien1" );
+                    String statut = feature.getStringProperty( "STATUT_JUR" );
+                    String prov = feature.getStringProperty( "PROVINCE" );
+                    String reg = feature.getStringProperty( "REGION" );
+                    String district = feature.getStringProperty( "DISTRICT" );
+                    String lien1 = feature.getStringProperty( "Lien1" );
+                    String lien2 = feature.getStringProperty( "Lien2" );
+                    String lien3 = feature.getStringProperty( "Lien3" );
+                    String rech1 = feature.getStringProperty( "Recherche1" );
+                    String rech2 = feature.getStringProperty( "Recherche2" );
+                    String rech3 = feature.getStringProperty( "Recherche3" );
 
-                    ImageView ImageArea = findViewById( R.id.imageArea );
+                    Intent intent = new Intent( getApplicationContext(),AreaActivity.class );
+                    intent.putExtra( "SHORT_NAME",area_name );
+                    intent.putExtra( "Description",area_descr );
+                    intent.putExtra( "STATUT_JUR",statut );
+                    intent.putExtra( "PROVINCE",prov );
+                    intent.putExtra( "REGION",reg );
+                    intent.putExtra( "DISTRICT",district );
+                    intent.putExtra( "Lien1",lien1 );
+                    intent.putExtra( "Lien2",lien2 );
+                    intent.putExtra( "Lien3",lien3 );
+                    intent.putExtra( "Recherche1",rech1 );
+                    intent.putExtra( "Recherche2",rech2 );
+                    intent.putExtra( "Recherche3",rech3 );
+                    startActivity( intent );
 
-                    if(area_name.contains( "Isalo" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Isalo.jpg" );
-                    }
-                    else if(area_name.contains( "Ambohitantely" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Ambohitantely.jpg" );
-                    }else if(area_name.contains( "Bemaraha" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Bemaraha.jpg" );
-                    }else if(area_name.contains( "Beza Mahafaly" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Beza_Mahafaly.jpg" );
-                    }else if(area_name.contains( "Cap Sainte Marie" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/cap saiten_marie.jpg" );
-                    }else if(area_name.contains( "Lokobe" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Lokobe.jpg" );
-                    }else if(area_name.contains( "Manongarivo" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Manongarivo.jpg" );
-                    }else if(area_name.contains( "Mikea" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Mikea.jpg" );
-                    }else if(area_name.contains( "Ranomafana" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Ranomafana.jpg" );
-                    }else if(area_name.contains( "Tsimanampesotse" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/Tsimanampetsotse.jpg" );
-                    }
-                    else if(area_name.contains( "Zombitse" )){
-                        imageStorage = mStorageRef.child( "AiresProtegees/zombitse_Vohibasia.jpg" );
-                    }
-                    else{
-                        imageStorage = mStorageRef.child( "AiresProtegees/area1.jpg" );
-                    }
-                    Glide.with( getApplicationContext() ).load( imageStorage ).into( ImageArea );
-
-                    TextView name_area = findViewById( R.id.NomArea );
-                    name_area.setText( area_name );
-
-                    TextView descr_area = findViewById( R.id.DescriptionArea );
-                    descr_area.setText( area_descr );
-
-                    TextView cat_area = findViewById( R.id.CategorieArea );
-                    cat_area.setText( type );
-
-                    final Button lien_area = findViewById( R.id.LienArea );
-                    lien_area.setOnClickListener( v -> {
-                        String url = lien;
-
-                        Intent i = new Intent( Intent.ACTION_VIEW );
-                        i.setData( Uri.parse( url ) );
-
-                        startActivity( i );
-
-                    } );
 
                 }
             }

@@ -75,7 +75,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
 
         //Retrieve data from list activity
         if(getIntent().hasExtra( "selected_guide" )){
-            Log.d("GuideDetailsActivity","ok bro");
+
             ContactPOJO contactPOJO = getIntent().getParcelableExtra( "selected_guide" );
             Name.setText( contactPOJO.getNom() );
             Langues.setText( "Langue(s) : "+contactPOJO.getLangues() );
