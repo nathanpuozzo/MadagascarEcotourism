@@ -11,7 +11,6 @@ import android.graphics.Color;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,6 +20,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -107,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     FloatingActionMenu materialDesignFAM;
     FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
 
-
+    private Button privacy;
+    private EditText PPScrollV;
+    private ImageButton PPClose;
     private ArrayList <ContactPOJO> mArrayList = new ArrayList <>();
     public ArrayList <HotelsPOJO> hotelArrayList = new ArrayList <>();
     public ArrayList <HotelsPOJO> areaArrayList = new ArrayList <>();
@@ -187,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     //FireBase
     private StorageReference mStorageRef;
     private StorageReference imageStorage;
-    private GlideRequest<Drawable> fullRequest;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -225,6 +229,28 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //FireBase
         mStorageRef = FirebaseStorage.getInstance().getReference();
+
+        //Buttons Privacy
+        privacy = findViewById( R.id.PrivacyPolicy );
+        PPScrollV = findViewById( R.id.PPScroll );
+        PPClose = findViewById( R.id.PPClose );
+
+        PPScrollV.setVisibility( View.INVISIBLE );
+        PPClose.setVisibility( View.INVISIBLE );
+
+        privacy.setOnClickListener( v -> {
+            PPScrollV.setVisibility( View.VISIBLE );
+            PPClose.setVisibility( View.VISIBLE );
+
+                PPClose.setOnClickListener( v1 -> {
+
+                    PPScrollV.setVisibility( View.INVISIBLE );
+                    PPClose.setVisibility( View.INVISIBLE );
+
+                } );
+
+
+        } );
 
 
         //Aire protégées

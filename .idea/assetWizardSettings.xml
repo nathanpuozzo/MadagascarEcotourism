@@ -85,11 +85,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="3ca68a" />
+                                      <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundLayerName" value="ic_logo_background" />
-                                      <entry key="foregroundImage" value="E:\Infographie\UMons-BOMB\AndroidStudio\MadagascarEcotourism\app\src\main\res\drawable-hdpi\ic_logo.png" />
-                                      <entry key="foregroundLayerName" value="ic_logo" />
-                                      <entry key="outputName" value="ic_logolaunch" />
+                                      <entry key="foregroundImage" value="E:\Infographie\UMons-BOMB\Ecotourism\LogoRetake512.png" />
+                                      <entry key="foregroundLayerName" value="ic_launch" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -137,11 +136,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

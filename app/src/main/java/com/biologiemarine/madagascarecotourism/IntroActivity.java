@@ -14,7 +14,7 @@ public class IntroActivity extends AppIntro {
         super.onCreate(savedInstanceState);
 
         //Slide 1
-        addSlide(AppIntroFragment.newInstance("Bienvenue sur l'application Madagascar Ecotourism","La première application concernant le tourisme responsable, soucieux de l’équité que l’écotourisme doit apporter à la population du pays",R.mipmap.logo,ContextCompat.getColor(getApplicationContext(),R.color.IntroBG)));
+        addSlide(AppIntroFragment.newInstance("Bienvenue sur l'application Madagascar Ecotourism","La première application concernant le tourisme responsable, soucieux de l’équité que l’écotourisme doit apporter à la population du pays",R.drawable.first,ContextCompat.getColor(getApplicationContext(),R.color.IntroBG)));
 
         //Slide 2
         addSlide(AppIntroFragment.newInstance("Hôtels","Planifiez votre voyage en ayant des informations traditionnelles sur les hôtels et des renseignements sur leurs performances écotouristiques",R.mipmap.localisation,ContextCompat.getColor(getApplicationContext(),R.color.IntroBG)));

@@ -44,6 +44,45 @@
         android:layout_marginTop="15dp"
         android:textColor="@color/GreenUI" />
 
+    <Button
+        android:id="@+id/PrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        android:text="Privacy Policy"
+        android:layout_gravity="top|right"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        />
+
+        <EditText
+            android:id="@+id/PPScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/WhiteText"
+            android:layout_margin="40dp"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:clickable="false"
+            android:focusable="false"
+            android:scrollbars="vertical"
+            android:text="@string/privacy_policy"/>
+
+    <ImageButton
+        android:id="@+id/PPClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cross"
+        android:tint="#FFFFFF"
+        android:layout_gravity="top|right"
+        android:layout_margin="60dp"
+        android:background="#00FFFFFF"
+        />
+
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/material_design_android_floating_action_menu"
         android:layout_width="wrap_content"
