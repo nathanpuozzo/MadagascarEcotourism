@@ -24,6 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -46,6 +47,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -55,10 +57,11 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="E:\Infographie\UMons-BOMB\AndroidStudio\MadagascarEcotourism\app\src\main\res\drawable-hdpi\ic_hotel.png" />
-                                      <entry key="outputName" value="ic_action_search" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="E:\Infographie\UMons-BOMB\Ecotourism\iconDodo.png" />
+                                      <entry key="outputName" value="ic_hotel_icon" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="727376" />
+                                      <entry key="themeColor" value="be1622" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -85,10 +88,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="ic_logo_background" />
                                       <entry key="foregroundImage" value="E:\Infographie\UMons-BOMB\Ecotourism\LogoRetake512.png" />
-                                      <entry key="foregroundLayerName" value="ic_launch" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -138,6 +138,11 @@
                             </entry>
                           </map>
                         </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
+                          </map>
+                        </option>
                       </PersistentState>
                     </value>
                   </entry>
@@ -157,12 +162,9 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="15" />
                             <entry key="opacityPercent" value="98" />
-                            <entry key="outputName" value="ic_lodging_15" />
-                            <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="E:\mapbox-maki-v5.0.0-2-g5b58632\mapbox-maki-5b58632\icons\lodging-15.svg" />
-                            <entry key="width" value="15" />
+                            <entry key="outputName" value="ic_icondodo" />
+                            <entry key="sourceFile" value="E:\Infographie\UMons-BOMB\Ecotourism\iconDodo.svg" />
                           </map>
                         </option>
                       </PersistentState>

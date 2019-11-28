@@ -97,9 +97,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
 
             String name = getIntent().getExtras().getString( "guide_name" );
             String langue1 = getIntent().getExtras().getString( "guide_langue1" );
-            String langue2 = getIntent().getExtras().getString( "guide_langue2" );
             String zone1 = getIntent().getExtras().getString( "guide_predil1" );
-            String zone2 = getIntent().getExtras().getString( "guide_predil2" );
             String agreg = getIntent().getExtras().getString( "guide_agreg" );
             String assoc = getIntent().getExtras().getString( "guide_assoc" );
             String descr = getIntent().getExtras().getString( "guide_descr" );
@@ -109,8 +107,8 @@ public class GuideDetailsActivity extends AppCompatActivity {
             String mail = getIntent().getExtras().getString( "guide_email" );
 
             Name.setText( name );
-            Langues.setText( "Langue(s) : "+langue1 + ", "+langue2 );
-            Zones.setText( "Zones de prédilection : "+zone1+", "+zone2);
+            Langues.setText( "Langue(s) : "+langue1 );
+            Zones.setText( "Zones de prédilection : "+zone1);
             Agregation.setText( "Agrégation du ministère : "+agreg );
             Association.setText( "Association : "+assoc );
             Description.setText( descr );

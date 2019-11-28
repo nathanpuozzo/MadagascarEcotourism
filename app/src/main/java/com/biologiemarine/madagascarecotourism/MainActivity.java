@@ -340,7 +340,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if(!guidesFeatures.isEmpty()){
             for(Feature feature : guidesFeatures){
                 String guide_name = feature.getStringProperty( "Nom" );
-                String guide_predi = feature.getStringProperty( "Région de prédilection1" );
+                String guide_predi = feature.getStringProperty( "Zones" );
 
                 featureMarker=map.addMarker( new MarkerOptions().position( point ).title( guide_name ).snippet( "Zone de prédilection :" + guide_predi ) );
             }
@@ -391,16 +391,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                     String guide_name = feature.getStringProperty( "Nom" );
                     String guide_descr = feature.getStringProperty( "Description" );
-                    String guide_agreg = feature.getStringProperty( "Agrégation par le ministère" );
+                    String guide_agreg = feature.getStringProperty( "Agregation" );
                     String guide_assoc = feature.getStringProperty( "Association" );
-                    String guide_diplome = feature.getStringProperty( "Diplôme" );
-                    String guide_email = feature.getStringProperty( "Email" );
-                    String guide_langue1 = feature.getStringProperty( "Langue1" );
-                    String guide_langue2 = feature.getStringProperty( "Langue2" );
-                    String guide_tel = feature.getStringProperty( "Téléphone" );
-                    String guide_predi1 = feature.getStringProperty( "Zone de prédilection1" );
-                    String guide_predi2 = feature.getStringProperty( "Zone de prédilection2" );
-                    String guide_spec = feature.getStringProperty( "Spécialités" );
+                    String guide_diplome = feature.getStringProperty( "Diplome" );
+                    String guide_email = feature.getStringProperty( "Mail" );
+                    String guide_langue1 = feature.getStringProperty( "Langues" );
+                    String guide_tel = feature.getStringProperty( "Tel" );
+                    String guide_predi1 = feature.getStringProperty( "Zones" );
+                    String guide_spec = feature.getStringProperty( "Specialites" );
 
                     Intent intent = new Intent( getApplicationContext(),GuideDetailsActivity.class );
                     intent.putExtra( "guide_name",guide_name );
@@ -410,10 +408,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     intent.putExtra( "guide_diplome",guide_diplome );
                     intent.putExtra( "guide_email",guide_email );
                     intent.putExtra( "guide_langue1",guide_langue1 );
-                    intent.putExtra( "guide_langue2",guide_langue2);
                     intent.putExtra( "guide_tel",guide_tel );
                     intent.putExtra( "guide_predil1",guide_predi1 );
-                    intent.putExtra( "guide_predil2",guide_predi2 );
                     intent.putExtra( "guide_spec",guide_spec );
                     startActivity( intent );
 
@@ -448,8 +444,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             String energie = feature.getStringProperty( "energie verte (sur 2)" );
             String dechets = feature.getStringProperty( "traitement de dechets  (sur 2)" );
-            String communaute = feature.getStringProperty( "communaute  (sur 2)" );
-            String salaire = feature.getStringProperty( "salaire_equitable(sur 2)" );
+            String communaute = feature.getStringProperty( "communaute (sur 2)" );
+            String salaire = feature.getStringProperty( "salaire_equitable (sur 2)" );
 
             String adresse = feature.getStringProperty( "adresse" );
             String tel = feature.getStringProperty( "tel" );
@@ -531,8 +527,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      * Adds the marker image to the map for use as a SymbolLayer icon
      */
     private void setUpImage() {
-        Bitmap icon = BitmapFactory.decodeResource( this.getResources(), R.drawable.hotel_icon );
+        Bitmap icon = BitmapFactory.decodeResource( this.getResources(), R.drawable.ic_hotel_icon );
         map.addImage( MARKER_IMAGE_ID, icon );
+
     }
 
     /**
