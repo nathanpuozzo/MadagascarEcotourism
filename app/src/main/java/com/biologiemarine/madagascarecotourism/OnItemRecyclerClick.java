@@ -11,5 +11,5 @@ public interface OnItemRecyclerClick {
      *            The id of the view which is clicked with in the item or
      *            -1 if the item itself clicked
      */
-    public void onRecyclerViewItemClicked(int position, int id);
+    void onRecyclerViewItemClicked(int position, int id);
 }

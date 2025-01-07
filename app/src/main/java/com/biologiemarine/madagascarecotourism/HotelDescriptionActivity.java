@@ -29,6 +29,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import timber.log.Timber;
+
 public class HotelDescriptionActivity extends AppCompatActivity {
 
     ExpandableListView expandableListView;
@@ -59,7 +61,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
         //ProgressCircle for images
         progressBar = findViewById( R.id.ProgressCircleHotelDetails );
 
-        expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
+        expandableListView = findViewById(R.id.expandableListView);
         ImageView image=findViewById( R.id.imageHotel );
         TextView prix_chambre=findViewById(R.id.prixNuit);
         TextView descr_hotel=findViewById( R.id.DescriptionHotel );
@@ -69,7 +71,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference("Hotel");
+        mRef = FirebaseDatabase.getInstance().getReference("Hotel");
         mRef.keepSynced( true );
         list = new ArrayList <>(  );
         if(getIntent().hasExtra( "selected_hotel" )){
@@ -119,7 +121,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Log.e( "HotelDescrActivity", "Le mail ne fonctionne pas :|" );
+                    Timber.tag("HotelDescrActivity").e("Le mail ne fonctionne pas :|");
                 }
             } );
 
@@ -149,7 +151,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
                     if(groupPosition==1 && childPosition==0){
                         String url = booking;
                         if(url.equals("_")){
-                            Log.d( "TAG","Pas de lien disponible" );
+                            Timber.tag("TAG").d("Pas de lien disponible");
                         }
                         else {
                             Intent i = new Intent( Intent.ACTION_VIEW );
@@ -160,7 +162,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
                     else if(groupPosition==1 && childPosition==1){
                         String url = tripadvisor;
                         if(url.equals("_")){
-                            Log.d( "TAG","Pas de lien disponible" );
+                            Timber.tag("TAG").d("Pas de lien disponible");
                         }
                         else {
                             Intent i = new Intent( Intent.ACTION_VIEW );
@@ -171,7 +173,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
                     else if(groupPosition==2 && childPosition==3){
                         String url = site;
                         if(url.equals("_")){
-                            Log.d( "TAG","Pas de lien disponible" );
+                            Timber.tag("TAG").d("Pas de lien disponible");
                         }
                         else {
                             Intent i = new Intent( Intent.ACTION_VIEW );

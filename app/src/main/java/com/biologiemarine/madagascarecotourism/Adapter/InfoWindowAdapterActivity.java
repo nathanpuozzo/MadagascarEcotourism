@@ -30,7 +30,7 @@ public class InfoWindowAdapterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.biologiemarine.madagascarecotourism.R.layout.activity_main);
 
-        mapView = (MapView) findViewById(com.biologiemarine.madagascarecotourism.R.id.mapView);
+        mapView = findViewById(com.biologiemarine.madagascarecotourism.R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(map -> {
             mapboxMap = map;
@@ -63,7 +63,7 @@ public class InfoWindowAdapterActivity extends AppCompatActivity {
     public void addCustomInfoWindowAdapter() {
         mapboxMap.setInfoWindowAdapter(new MapboxMap.InfoWindowAdapter() {
 
-            private int tenDp = (int) getResources().getDimension(com.biologiemarine.madagascarecotourism.R.dimen.activity_horizontal_margin);
+            private final int tenDp = (int) getResources().getDimension(com.biologiemarine.madagascarecotourism.R.dimen.activity_horizontal_margin);
 
             @Override
             public View getInfoWindow(@NonNull Marker marker) {

@@ -17,6 +17,8 @@ import com.biologiemarine.madagascarecotourism.R;
 
 import java.util.ArrayList;
 
+import timber.log.Timber;
+
 class MyParentsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
 
     private OnRecyclerClickListener onRecyclerClickListener;
@@ -26,7 +28,7 @@ class MyParentsViewHolder extends RecyclerView.ViewHolder implements View.OnClic
 
     public MyParentsViewHolder(@NonNull View itemView) {
         super(itemView);
-        Log.v("ViewHolder","in View Holder");
+        Timber.tag("ViewHolder").v("in View Holder");
         hotel_photo = itemView.findViewById(R.id.HotelPhoto);
         hotel_name = itemView.findViewById(R.id.HotelName);
         hotel_location = itemView.findViewById(R.id.HotelPrix);
@@ -57,7 +59,7 @@ class MyParentsViewHolder extends RecyclerView.ViewHolder implements View.OnClic
 
 public class CustomHotelAdapter extends RecyclerView.Adapter<MyParentsViewHolder> {
 
-    private OnRecyclerClickListener listener;
+    private final OnRecyclerClickListener listener;
     private ArrayList<HotelsPOJO> hotelArrayList = new ArrayList<>();
     private Context context;
 
@@ -70,7 +72,7 @@ public class CustomHotelAdapter extends RecyclerView.Adapter<MyParentsViewHolder
 
     @Override
     public MyParentsViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
-        Log.v("CreateViewHolder", "in onCreateViewHolder");
+        Timber.tag("CreateViewHolder").v("in onCreateViewHolder");
 
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotel_list_layout,parent,false);
         return new MyParentsViewHolder(itemView);
@@ -80,7 +82,7 @@ public class CustomHotelAdapter extends RecyclerView.Adapter<MyParentsViewHolder
 
     @Override
     public void onBindViewHolder( MyParentsViewHolder hotelViewHolder,int position) {
-        Log.v("BindViewHolder", "in onBindViewHolder");
+        Timber.tag("BindViewHolder").v("in onBindViewHolder");
         HotelsPOJO contact = hotelArrayList.get(position);
         /*
         hotelViewHolder.hotel_photo.setImageDrawable(contact.getImage());

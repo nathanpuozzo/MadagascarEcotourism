@@ -27,6 +27,8 @@ import com.squareup.picasso.Transformation;
 import java.util.ArrayList;
 import java.util.List;
 
+import timber.log.Timber;
+
 
 public class GuideDetailsActivity extends AppCompatActivity {
 
@@ -47,7 +49,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference("Data");
+        mRef = FirebaseDatabase.getInstance().getReference("Data");
         mRef.keepSynced( true );
 
         list = new ArrayList <>(  );
@@ -88,7 +90,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
             Mail.setText( "Email : "+contactPOJO.getMail() );
             Tel.setText( "Téléphone : "+contactPOJO.getTel() );
             Picasso.get().load( contactPOJO.getImage() ).transform( new CircleTransform() ).into( mImage );
-            Log.d("GuideDetailsActivity","OnCreate" + contactPOJO.toString());
+            Timber.tag("GuideDetailsActivity").d("OnCreate%s", contactPOJO.toString());
         }
 
         //Retrieve data from Map Activity
@@ -139,7 +141,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Log.e( "GuideDetailsActivity", "Le mail ne fonctionne pas :|" );
+                        Timber.tag("GuideDetailsActivity").e("Le mail ne fonctionne pas :|");
                     }
                 } );
             }
@@ -158,7 +160,7 @@ public class GuideDetailsActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Log.e( "GuideDetailsActivity", "Le tel ne fonctionne pas :|" );
+                        Timber.tag("GuideDetailsActivity").e("Le tel ne fonctionne pas :|");
                     }
                 } );
             }

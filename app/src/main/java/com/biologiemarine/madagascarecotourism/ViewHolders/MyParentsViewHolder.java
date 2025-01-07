@@ -14,7 +14,7 @@ public class MyParentsViewHolder extends GroupViewHolder {
     public MyParentsViewHolder (View itemView){
 
         super (itemView);
-        listGroup = (TextView)itemView.findViewById(R.id.parentTitle);
+        listGroup = itemView.findViewById(R.id.parentTitle);
     }
 
     public void setParentTitle(String group){

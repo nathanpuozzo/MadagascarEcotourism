@@ -11,7 +11,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -31,6 +30,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import timber.log.Timber;
+
 public class GuideListActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
@@ -48,7 +49,7 @@ public class GuideListActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_guide );
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
         //Button to return to MainActivity
@@ -73,7 +74,7 @@ public class GuideListActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference("Data");
+        mRef = FirebaseDatabase.getInstance().getReference("Data");
         mRef.keepSynced( true );
 
         mRef.addListenerForSingleValueEvent( new ValueEventListener() {
@@ -121,7 +122,7 @@ public class GuideListActivity extends AppCompatActivity {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        Log.d("GuideActivity","I'm here and there is the ");
+        Timber.tag("GuideActivity").d("I'm here and there is the ");
         //Inflate menu
         MenuInflater inflater = getMenuInflater();
         inflater.inflate( R.menu.guide_search_menu,menu );

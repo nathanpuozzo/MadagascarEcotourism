@@ -1,5 +1,31 @@
 package com.biologiemarine.madagascarecotourism;
 
+import static com.mapbox.mapboxsdk.style.expressions.Expression.all;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.eq;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.get;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.gt;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.gte;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.has;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.literal;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.lt;
+import static com.mapbox.mapboxsdk.style.expressions.Expression.toNumber;
+import static com.mapbox.mapboxsdk.style.layers.Property.ICON_ANCHOR_BOTTOM;
+import static com.mapbox.mapboxsdk.style.layers.Property.NONE;
+import static com.mapbox.mapboxsdk.style.layers.Property.VISIBLE;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.circleColor;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.circleRadius;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAllowOverlap;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAnchor;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconOffset;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconSize;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textAllowOverlap;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textColor;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textField;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textIgnorePlacement;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textSize;
+import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.visibility;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +43,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -68,35 +93,12 @@ import com.mapbox.mapboxsdk.style.sources.VectorSource;
 
 import java.io.InputStream;
 import java.lang.ref.WeakReference;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.mapbox.mapboxsdk.style.expressions.Expression.all;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.eq;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.get;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.gt;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.gte;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.has;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.literal;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.lt;
-import static com.mapbox.mapboxsdk.style.expressions.Expression.toNumber;
-import static com.mapbox.mapboxsdk.style.layers.Property.ICON_ANCHOR_BOTTOM;
-import static com.mapbox.mapboxsdk.style.layers.Property.NONE;
-import static com.mapbox.mapboxsdk.style.layers.Property.VISIBLE;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.circleColor;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.circleRadius;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAllowOverlap;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconAnchor;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconOffset;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconSize;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textAllowOverlap;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textColor;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textField;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textIgnorePlacement;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.textSize;
-import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.visibility;
+import timber.log.Timber;
 
 // classes needed to add location layer
 
@@ -110,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Button privacy;
     private EditText PPScrollV;
     private ImageButton PPClose;
-    private ArrayList <ContactPOJO> mArrayList = new ArrayList <>();
+    private final ArrayList <ContactPOJO> mArrayList = new ArrayList <>();
     public ArrayList <HotelsPOJO> hotelArrayList = new ArrayList <>();
     public ArrayList <HotelsPOJO> areaArrayList = new ArrayList <>();
     private RecyclerView mRecyclerView1;
@@ -149,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public static final String PROPERTY_TITLE = "hotel";
     public static final String PROPERTY_PRICE = "prix";
     public static final String PROPERTY_IPE = "ipe";
-    private String geojsonSourceId = "geojsonSourceId";
+    private final String geojsonSourceId = "geojsonSourceId";
     private FeatureCollection featureCollection;
     private FeatureCollection areaCollection;
     private FeatureCollection guideCollection;
@@ -160,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     //Spinner data to sort hotels
     Spinner spinner;
-    String sort[] = {"Noms", "Score", "Prix"};
+    String[] sort = {"Noms", "Score", "Prix"};
     ArrayAdapter <String> stringArrayAdapter;
     String record = "";
 
@@ -206,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView = findViewById( R.id.mapView );
 
         //button hide/show aires protégées
-        hideShow = (Switch) findViewById( R.id.hideShow );
+        hideShow = findViewById( R.id.hideShow );
 
         mapView.onCreate( savedInstanceState );
         mapView.getMapAsync( this );
@@ -426,7 +428,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // hit test if clicked point is in textview hitbox
         if (hitRectText.contains( (int) screenPoint.x, (int) screenPoint.y )) {
-            Log.d( TAG,"User click on text");
+            Timber.tag(TAG).d("User click on text");
             // user clicked on text
             String name = feature.getStringProperty( "hotel" );
             String nuit = feature.getStringProperty( "prix" );
@@ -740,7 +742,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 byte[] buffer = new byte[size];
                 is.read(buffer);
                 is.close();
-                return new String(buffer, "UTF-8");
+                return new String(buffer, StandardCharsets.UTF_8);
             } catch (Exception exception) {
                 throw new RuntimeException(exception);
             }

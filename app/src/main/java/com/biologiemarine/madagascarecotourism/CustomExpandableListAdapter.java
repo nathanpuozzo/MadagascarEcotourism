@@ -14,11 +14,11 @@ import java.util.List;
 
 public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
-    private Context context;
-    private List<String> expandableListTitle;
-    private HashMap<String, List<String>> expandableListDetail;
-    private List<Integer> groupImages;
-    private HashMap<Integer,List<Integer>> childImages;
+    private final Context context;
+    private final List<String> expandableListTitle;
+    private final HashMap<String, List<String>> expandableListDetail;
+    private final List<Integer> groupImages;
+    private final HashMap<Integer,List<Integer>> childImages;
     //TODO: images devant groups
 
     public CustomExpandableListAdapter(Context context, List <String> expandableListTitle, List <Integer> groupImages, HashMap <String, List <String>> expandableListDetail, HashMap <Integer, List <Integer>> childImages) {
@@ -49,7 +49,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_item, null);
         }
-        TextView expandedListTextView = (TextView) convertView
+        TextView expandedListTextView = convertView
                 .findViewById(R.id.expandedListItem);
         expandedListTextView.setText(expandedListText);
         ImageView expandedListImageView = convertView.findViewById( R.id.imgServicesItem);
@@ -112,12 +112,12 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = layoutInflater.inflate(R.layout.list_group, null);
         }
 
-        TextView listTitleTextView = (TextView) convertView
+        TextView listTitleTextView = convertView
                 .findViewById(R.id.listTitle);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
 
-        ImageView imgServicesGroup = (ImageView) convertView.findViewById(R.id.imgServicesGroup);
+        ImageView imgServicesGroup = convertView.findViewById(R.id.imgServicesGroup);
         int imageId =groupImages.get(listPosition);
         imgServicesGroup.setImageResource(imageId);
 

@@ -22,7 +22,7 @@ class CityStateMarkerOptions extends BaseMarkerOptions<CityStateMarker, CityStat
     }
 
     private CityStateMarkerOptions(Parcel in) {
-        position((LatLng) in.readParcelable(LatLng.class.getClassLoader()));
+        position(in.readParcelable(LatLng.class.getClassLoader()));
         snippet(in.readString());
         String iconId = in.readString();
         Bitmap iconBitmap = in.readParcelable(Bitmap.class.getClassLoader());

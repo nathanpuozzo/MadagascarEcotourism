@@ -19,7 +19,7 @@ import java.util.List;
 public class AireAdapter extends RecyclerView.Adapter<AireAdapter.AireViewHolder>{
 
     private OnRecyclerClickListener onRecyclerClickListener;
-    private List<AirePOJO> list;
+    private final List<AirePOJO> list;
     Context context;
 
 
@@ -56,7 +56,7 @@ public class AireAdapter extends RecyclerView.Adapter<AireAdapter.AireViewHolder
 
     public class AireViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private OnRecyclerClickListener mListener;
+        private final OnRecyclerClickListener mListener;
         View mView;
         public TextView NomView,ProvinceView,TypeView;
         public ImageView imageView;
@@ -68,9 +68,9 @@ public class AireAdapter extends RecyclerView.Adapter<AireAdapter.AireViewHolder
             this.mListener = listener;
 
             //Views
-            NomView = (TextView) mView.findViewById( R.id.areaName );
-            ProvinceView =(TextView) mView.findViewById( R.id.areaProvince );
-            TypeView =(TextView) mView.findViewById( R.id.areaType );
+            NomView = mView.findViewById( R.id.areaName );
+            ProvinceView = mView.findViewById( R.id.areaProvince );
+            TypeView = mView.findViewById( R.id.areaType );
             imageView = mView.findViewById( R.id.areaImage );
 
             //Click on Item

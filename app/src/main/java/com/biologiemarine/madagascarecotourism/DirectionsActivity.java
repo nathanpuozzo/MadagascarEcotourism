@@ -1,5 +1,7 @@
 package com.biologiemarine.madagascarecotourism;
 
+import static com.mapbox.core.constants.Constants.PRECISION_6;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -26,8 +28,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-import static com.mapbox.core.constants.Constants.PRECISION_6;
+import timber.log.Timber;
 
 /**
  * Use Mapbox Java Services to request directions
@@ -99,18 +100,18 @@ public class DirectionsActivity extends AppCompatActivity {
                 System.out.println(call.request().url().toString());
 
                 // You can get the generic HTTP info about the response
-                Log.d(TAG, "Response code: " + response.code());
+                Timber.tag(TAG).d("Response code: %s", response.code());
                 if (response.body() == null) {
-                    Log.e(TAG, "No routes found, make sure you set the right user and access token.");
+                    Timber.tag(TAG).e("No routes found, make sure you set the right user and access token.");
                     return;
                 } else if (response.body().routes().size() < 1) {
-                    Log.e(TAG, "No routes found");
+                    Timber.tag(TAG).e("No routes found");
                     return;
                 }
 
                 // Print some info about the route
                 currentRoute = response.body().routes().get(0);
-                Log.d(TAG, "Distance: " + currentRoute.distance());
+                Timber.tag(TAG).d("Distance: %s", currentRoute.distance());
                 Toast.makeText(DirectionsActivity.this, String.format(getString(R.string.directions_activity_toast_message)+
                         currentRoute.distance()), Toast.LENGTH_SHORT).show();
 
@@ -120,7 +121,7 @@ public class DirectionsActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<DirectionsResponse> call, Throwable throwable) {
-                Log.e(TAG, "Error: " + throwable.getMessage());
+                Timber.tag(TAG).e("Error: %s", throwable.getMessage());
                 Toast.makeText(DirectionsActivity.this, "Error: " + throwable.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });

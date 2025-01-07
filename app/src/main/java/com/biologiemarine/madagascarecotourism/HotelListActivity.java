@@ -69,7 +69,7 @@ public class HotelListActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference("Hotel");
+        mRef = FirebaseDatabase.getInstance().getReference("Hotel");
         mRef.keepSynced( true );
 
         mRef.addValueEventListener( new ValueEventListener() {

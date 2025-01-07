@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -26,6 +25,8 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+import timber.log.Timber;
+
 public class AreaActivity extends AppCompatActivity {
 
     private FirebaseDatabase mFirebaseDatabase;
@@ -44,7 +45,7 @@ public class AreaActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference( "Aire" );
+        mRef = FirebaseDatabase.getInstance().getReference( "Aire" );
         mRef.keepSynced( true );
 
         list = new ArrayList <>();
@@ -101,7 +102,7 @@ public class AreaActivity extends AppCompatActivity {
             } );
 
             Lien2.setOnClickListener( v -> {
-                String url = airePOJO.getLien2();;
+                String url = airePOJO.getLien2();
                 if(!url.equals("_")){
                     Intent i = new Intent( Intent.ACTION_VIEW );
                     i.setData( Uri.parse( url ) );
@@ -212,7 +213,7 @@ public class AreaActivity extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Log.e( "GuideDetailsActivity", "Le mail ne fonctionne pas :|" );
+                        Timber.tag("GuideDetailsActivity").e("Le mail ne fonctionne pas :|");
                     }
                 } );
 

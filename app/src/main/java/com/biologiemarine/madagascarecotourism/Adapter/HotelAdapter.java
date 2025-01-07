@@ -23,7 +23,7 @@ import java.util.List;
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHolder>{
 
     private OnRecyclerClickListener onRecyclerClickListener;
-    private List<HotelsPOJO> HotelList;
+    private final List<HotelsPOJO> HotelList;
 
     public HotelAdapter(List<HotelsPOJO> hotelList){
         this.HotelList = hotelList;
@@ -57,7 +57,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
 
     public class HotelViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private OnRecyclerClickListener mListener;
+        private final OnRecyclerClickListener mListener;
         View mView;
         public TextView NomHotelView,PrixHotelView,NoteHotelView;
         public ImageView imageHotelView;
@@ -69,9 +69,9 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
             this.mListener = listener;
 
             //Views
-            NomHotelView = (TextView) mView.findViewById( R.id.HotelName );
-            PrixHotelView =(TextView) mView.findViewById( R.id.HotelPrix );
-            NoteHotelView =(TextView) mView.findViewById( R.id.HotelScore );
+            NomHotelView = mView.findViewById( R.id.HotelName );
+            PrixHotelView = mView.findViewById( R.id.HotelPrix );
+            NoteHotelView = mView.findViewById( R.id.HotelScore );
             imageHotelView = mView.findViewById( R.id.HotelPhoto );
 
             //Click on Item

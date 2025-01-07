@@ -2,7 +2,6 @@ package com.biologiemarine.madagascarecotourism;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.DataSource;
@@ -21,6 +20,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
+
+import timber.log.Timber;
 
 /**
  * ModelLoader implementation to download images from FirebaseStorage with Glide.
@@ -87,7 +88,7 @@ public class FirebaseImageLoader implements ModelLoader<StorageReference, InputS
 
     private static class FirebaseStorageKey implements Key {
 
-        private StorageReference mRef;
+        private final StorageReference mRef;
 
         public FirebaseStorageKey(StorageReference ref) {
             mRef = ref;
@@ -116,7 +117,7 @@ public class FirebaseImageLoader implements ModelLoader<StorageReference, InputS
 
     private static class FirebaseStorageFetcher implements DataFetcher<InputStream> {
 
-        private StorageReference mRef;
+        private final StorageReference mRef;
         private StreamDownloadTask mStreamTask;
         private InputStream mInputStream;
 
@@ -152,7 +153,7 @@ public class FirebaseImageLoader implements ModelLoader<StorageReference, InputS
                     mInputStream.close();
                     mInputStream = null;
                 } catch (IOException e) {
-                    Log.w(TAG, "Could not close stream", e);
+                    Timber.tag(TAG).w(e, "Could not close stream");
                 }
             }
         }

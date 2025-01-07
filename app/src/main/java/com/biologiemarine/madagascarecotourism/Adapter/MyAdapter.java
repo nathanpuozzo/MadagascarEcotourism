@@ -23,7 +23,7 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     private OnRecyclerClickListener onRecyclerClickListener;
-    private List<ContactPOJO> list;
+    private final List<ContactPOJO> list;
     Context context;
 
 
@@ -66,7 +66,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private OnRecyclerClickListener mListener;
+        private final OnRecyclerClickListener mListener;
         View mView;
         public TextView NomView,LanguesView,ZonesView;
         public ImageView imageView;
@@ -78,9 +78,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             this.mListener = listener;
 
             //Views
-            NomView = (TextView) mView.findViewById( R.id.NomGuide );
-            LanguesView =(TextView) mView.findViewById( R.id.LanguesGuide );
-            ZonesView =(TextView) mView.findViewById( R.id.ZonesGuide );
+            NomView = mView.findViewById( R.id.NomGuide );
+            LanguesView = mView.findViewById( R.id.LanguesGuide );
+            ZonesView = mView.findViewById( R.id.ZonesGuide );
             imageView = mView.findViewById( R.id.ImageGuide );
 
             //Click on Item

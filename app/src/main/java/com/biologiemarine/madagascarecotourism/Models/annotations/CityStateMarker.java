@@ -4,7 +4,7 @@ import com.mapbox.mapboxsdk.annotations.Marker;
 
 public class CityStateMarker extends Marker {
 
-    private String infoWindowBackgroundColor;
+    private final String infoWindowBackgroundColor;
 
     public CityStateMarker(CityStateMarkerOptions cityStateOptions, String color) {
         super(cityStateOptions);

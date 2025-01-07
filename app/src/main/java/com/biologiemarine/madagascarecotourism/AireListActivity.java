@@ -65,7 +65,7 @@ public class AireListActivity extends AppCompatActivity {
 
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getInstance().getReference("Aire");
+        mRef = FirebaseDatabase.getInstance().getReference("Aire");
         mRef.keepSynced( true );
 
         mRef.addListenerForSingleValueEvent( new ValueEventListener() {
