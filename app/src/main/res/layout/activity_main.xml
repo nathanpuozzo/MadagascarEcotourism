@@ -22,7 +22,7 @@
         app:mapbox_cameraTargetLng="47.6"-->
 
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/hideShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -42,7 +42,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -53,6 +53,8 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.widget.SwitchCompat;
 
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
 import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private MapView mapView;
     private MapboxMap map;
-    private Switch hideShow;
+    private SwitchCompat hideShow;
     private PermissionsManager permissionsManager;
     private LocationEngine locationEngine;
     private LocationComponent locationComponent;
