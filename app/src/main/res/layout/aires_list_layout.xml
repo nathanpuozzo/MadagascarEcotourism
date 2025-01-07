@@ -67,6 +67,22 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:gravity="center"
+            android:spinnerMode="dropdown"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/WhiteText">
 

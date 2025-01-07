@@ -69,6 +69,8 @@ public class GuideListActivity extends AppCompatActivity {
 
         list = new ArrayList <>(  );
 
+
+
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mRef = mFirebaseDatabase.getInstance().getReference("Data");
@@ -104,6 +106,7 @@ public class GuideListActivity extends AppCompatActivity {
                     } );
 
                     mRecyclerView.setAdapter( adapter );
+
                 }
             }
 
@@ -161,7 +164,7 @@ public class GuideListActivity extends AppCompatActivity {
     private void firebaseSearch(String searchText){
 
         //TODO : implémenter/améliorer la recherche
-        Query firebaseSearchQuery = mRef.orderByChild( "Nom" ).startAt( searchText ).endAt( searchText + "\uf8ff" );
+        Query firebaseSearchQuery = mRef.orderByChild( "Zones" ).startAt( searchText ).endAt( searchText + "\uf8ff" );
         firebaseSearchQuery.addValueEventListener( new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

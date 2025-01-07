@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -41,7 +42,6 @@ import com.mapbox.android.core.location.LocationEnginePriority;
 import com.mapbox.android.core.location.LocationEngineProvider;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
-import com.mapbox.api.directions.v5.models.DirectionsRoute;
 import com.mapbox.geojson.Feature;
 import com.mapbox.geojson.FeatureCollection;
 import com.mapbox.geojson.Point;
@@ -60,13 +60,11 @@ import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.plugins.locationlayer.modes.CameraMode;
 import com.mapbox.mapboxsdk.style.expressions.Expression;
 import com.mapbox.mapboxsdk.style.layers.CircleLayer;
-import com.mapbox.mapboxsdk.style.layers.FillLayer;
 import com.mapbox.mapboxsdk.style.layers.Layer;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.mapbox.mapboxsdk.style.sources.Source;
 import com.mapbox.mapboxsdk.style.sources.VectorSource;
-import com.mapbox.services.android.navigation.ui.v5.route.NavigationMapRoute;
 
 import java.io.InputStream;
 import java.lang.ref.WeakReference;
@@ -131,16 +129,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Location originLocation;
     private static final String geoJsonSourceId = "geoJsonData";
     private static final String geoJsonLayerId = "polygonFillLayer";
-    private FillLayer layer;
     private GeoJsonSource source;
-    private Point originPosition;
-    private Point destinationPosition;
-    private Marker destinationMarker;
-    private LatLng originCoord;
-    private LatLng destinationCoord;
-    private DirectionsRoute currentRoute;
     private static final String TAG2 = "DirectionsActivity";
-    private NavigationMapRoute navigationMapRoute;
     private static final String TAG = "MainActivity";
 
     private Marker featureMarker;
@@ -424,7 +414,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void handleClickCallout(Feature feature, PointF screenPoint, PointF symbolScreenPoint) {
         View view = viewMap.get( feature.getStringProperty( PROPERTY_TITLE ) );
         View textContainer = view.findViewById( R.id.text_container );
-
         // create hitbox for textView
         Rect hitRectText = new Rect();
         textContainer.getHitRect( hitRectText );
@@ -433,10 +422,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         hitRectText.offset( (int) symbolScreenPoint.x, (int) symbolScreenPoint.y );
 
         // offset vertically to match anchor behaviour
-        hitRectText.offset( 0, -view.getMeasuredHeight() );
+        hitRectText.offset(  -view.getMeasuredWidth()/2, -view.getMeasuredHeight() );
 
         // hit test if clicked point is in textview hitbox
         if (hitRectText.contains( (int) screenPoint.x, (int) screenPoint.y )) {
+            Log.d( TAG,"User click on text");
             // user clicked on text
             String name = feature.getStringProperty( "hotel" );
             String nuit = feature.getStringProperty( "prix" );
@@ -490,6 +480,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
     }
+
 
     private LatLng convertToLatLng(Feature feature) {
         Point symbolPoint = (Point) feature.geometry();

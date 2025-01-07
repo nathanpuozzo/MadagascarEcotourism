@@ -16,5 +16,9 @@
         <item name="android:background">@drawable/spinner_background</item>
         <item name="spinnerStyle">@style/Widget.App.Spinner</item>
         <item name="android:spinnerStyle">@style/Widget.App.Spinner</item>
+
+    </style>
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#148E13</item>
     </style>
 </resources>

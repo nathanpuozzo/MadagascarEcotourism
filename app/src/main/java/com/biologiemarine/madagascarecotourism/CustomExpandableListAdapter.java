@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -16,12 +17,16 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     private Context context;
     private List<String> expandableListTitle;
     private HashMap<String, List<String>> expandableListDetail;
+    private List<Integer> groupImages;
+    private HashMap<Integer,List<Integer>> childImages;
+    //TODO: images devant groups
 
-    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle,
-                                       HashMap<String, List<String>> expandableListDetail) {
+    public CustomExpandableListAdapter(Context context, List <String> expandableListTitle, List <Integer> groupImages, HashMap <String, List <String>> expandableListDetail, HashMap <Integer, List <Integer>> childImages) {
         this.context = context;
         this.expandableListTitle = expandableListTitle;
         this.expandableListDetail = expandableListDetail;
+        this.groupImages= groupImages;
+        this.childImages = childImages;
     }
 
     @Override
@@ -47,6 +52,30 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         TextView expandedListTextView = (TextView) convertView
                 .findViewById(R.id.expandedListItem);
         expandedListTextView.setText(expandedListText);
+        ImageView expandedListImageView = convertView.findViewById( R.id.imgServicesItem);
+        final int imageId = childImages.get(listPosition).get( expandedListPosition );
+        switch (listPosition){
+            case 0 :
+                if(expandedListPosition == 0){expandedListImageView.setImageResource(R.drawable.ic_greenpower);}
+                else if (expandedListPosition == 1){expandedListImageView.setImageResource(R.drawable.ic_wastetreatment);}
+                else if (expandedListPosition == 2){expandedListImageView.setImageResource(R.drawable.ic_community);}
+                else if (expandedListPosition == 3){expandedListImageView.setImageResource(R.drawable.ic_salary);}
+                break;
+            case 1 :
+                if(expandedListPosition == 0){expandedListImageView.setImageResource(R.drawable.ic_bookingcom_icon);}
+                else if (expandedListPosition == 1){expandedListImageView.setImageResource(R.drawable.ic_tripadvisor_icon);}
+                break;
+            case 2 :
+                if(expandedListPosition == 0){expandedListImageView.setImageResource(R.drawable.ic_location);}
+                else if (expandedListPosition == 1){expandedListImageView.setImageResource(R.drawable.ic_call_answer);}
+                else if (expandedListPosition == 2){expandedListImageView.setImageResource(R.drawable.ic_email);}
+                else if (expandedListPosition == 3){expandedListImageView.setImageResource(R.drawable.ic_www);}
+                break;
+            default :
+                expandedListImageView.setImageResource(R.drawable.googleg_disabled_color_18);
+                break;
+        }
+
         return convertView;
     }
 
@@ -71,19 +100,27 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         return listPosition;
     }
 
+
     @Override
     public View getGroupView(int listPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
         String listTitle = (String) getGroup(listPosition);
+
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.list_group, null);
         }
+
         TextView listTitleTextView = (TextView) convertView
                 .findViewById(R.id.listTitle);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
+
+        ImageView imgServicesGroup = (ImageView) convertView.findViewById(R.id.imgServicesGroup);
+        int imageId =groupImages.get(listPosition);
+        imgServicesGroup.setImageResource(imageId);
+
         return convertView;
     }
 
@@ -96,5 +133,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int listPosition, int expandedListPosition) {
         return true;
     }
+
+
 }
 

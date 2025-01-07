@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|left"
         android:layout_margin="10dp"
-        android:background="@color/GreenUI"
         android:padding="5dp"
+        android:theme="@style/SwitchTheme"
         android:textColor="@color/WhiteText" />
 
 
@@ -41,8 +41,7 @@
         android:background="@color/WhiteText"
         android:layout_marginLeft="75dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/GreenUI" />
+        android:layout_marginTop="15dp" />
 
     <Button
         android:id="@+id/PrivacyPolicy"

@@ -71,23 +71,22 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayoutSPINNER"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/WhiteText"
-        android:visibility="gone">
+        android:layout_height="wrap_content">
 
         <Spinner
-            android:id="@+id/ListSpinner"
+            android:id="@+id/spinnerRegion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown">
-        </Spinner>
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:gravity="center"
+            android:spinnerMode="dropdown"/>
 
-    </LinearLayout>
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

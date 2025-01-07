@@ -34,8 +34,8 @@ public class AreaActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
 
-    TextView Nom,Statut,Province,Description,Categorie,Lien1,Lien2,Lien3,Recherche1,Recherche2,Recherche3,Region,District,Type;
-    ImageView mImage;
+    TextView Nom,Statut,Province,Description,Categorie,Recherche2,Recherche3,Region,District,Type;
+    ImageView mImage,Lien1,Lien2,Lien3,Recherche1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class AreaActivity extends AppCompatActivity {
         //ProgressCircle for images
         progressBar = findViewById( R.id.ProgressCircleAireDescr );
 
-        //TODO: TextViews pour les liens, recherches, statut, etc.
+
         Nom = findViewById( R.id.NomArea );
         Description = findViewById( R.id.DescriptionArea );
         Statut = findViewById( R.id.StatutArea );
@@ -66,18 +66,12 @@ public class AreaActivity extends AppCompatActivity {
         Lien2 = findViewById( R.id.Lien2 );
         Lien3 = findViewById( R.id.Lien3 );
         Recherche1 = findViewById( R.id.Rech1 );
-        Recherche2 = findViewById( R.id.Rech2 );
-        Recherche3 = findViewById( R.id.Rech3 );
         District = findViewById( R.id.DistrictArea );
         mImage = findViewById( R.id.imageArea );
 
 
-        Lien1.setText( "Lien n°1" );
-        Lien2.setText( "Lien n°2" );
-        Lien3.setText( "Lien n°3" );
-        Recherche1.setText( "Recherche n°1" );
-        Recherche2.setText( "Recherche n°2"  );
-        Recherche3.setText( "Recherche n°3" );
+
+
 
         //Retrieve data from list activity
         if (getIntent().hasExtra( "selected_area" )) {
@@ -143,7 +137,7 @@ public class AreaActivity extends AppCompatActivity {
                     Toast.makeText( getApplicationContext(),"Pas de lien communiqué",Toast.LENGTH_SHORT ).show();
                 }
             } );
-
+/*
             Recherche2.setOnClickListener( v -> {
                 String url = airePOJO.getRecherche2();
                 if(!url.equals("_")){
@@ -169,7 +163,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
 
             } );
-
+*/
 
         }
 
@@ -274,7 +268,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
 
             } );
-
+/*
             Recherche2.setOnClickListener( v -> {
                 String url = rech2;
                 if(!url.equals("_")){
@@ -300,7 +294,7 @@ public class AreaActivity extends AppCompatActivity {
                 }
 
             } );
-
+*/
             }
 
 

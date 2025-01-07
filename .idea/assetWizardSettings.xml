@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_filter_vintage_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -58,10 +58,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="E:\Infographie\UMons-BOMB\Ecotourism\iconDodo.png" />
-                                      <entry key="outputName" value="ic_hotel_icon" />
+                                      <entry key="imageAsset" value="E:\Infographie\UMons-BOMB\Ecotourism\greenpower.svg" />
+                                      <entry key="outputName" value="ic_greenpower" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="be1622" />
+                                      <entry key="themeColor" value="7eb93f" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -131,6 +131,17 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_florist_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -159,12 +170,28 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_euro_symbol_black_24dp.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
+                            <entry key="color" value="fff447" />
                             <entry key="opacityPercent" value="98" />
-                            <entry key="outputName" value="ic_icondodo" />
-                            <entry key="sourceFile" value="E:\Infographie\UMons-BOMB\Ecotourism\iconDodo.svg" />
+                            <entry key="outputName" value="ic_www" />
+                            <entry key="sourceFile" value="E:\Infographie\UMons-BOMB\Ecotourism\www.svg" />
                           </map>
                         </option>
                       </PersistentState>

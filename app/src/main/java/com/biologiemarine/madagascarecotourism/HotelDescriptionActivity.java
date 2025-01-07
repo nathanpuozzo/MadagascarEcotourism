@@ -1,5 +1,6 @@
 package com.biologiemarine.madagascarecotourism;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,6 +45,9 @@ public class HotelDescriptionActivity extends AppCompatActivity {
     private List<HotelsPOJO> list;
     private ProgressBar progressBar;
 
+    public  List<Integer> groupImages;
+    public  HashMap<Integer, List<Integer>> childImages;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,13 +65,13 @@ public class HotelDescriptionActivity extends AppCompatActivity {
         TextView descr_hotel=findViewById( R.id.DescriptionHotel );
         TextView name_hotel=findViewById(R.id.NomHotel);
 
+        prepareListData();
+
         //Send query to FirebaseDatabase
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mRef = mFirebaseDatabase.getInstance().getReference("Hotel");
         mRef.keepSynced( true );
-
         list = new ArrayList <>(  );
-
         if(getIntent().hasExtra( "selected_hotel" )){
             HotelsPOJO hotelsPOJO = getIntent().getParcelableExtra( "selected_hotel" );
             name_hotel.setText( hotelsPOJO.getHotel() );
@@ -127,7 +131,7 @@ public class HotelDescriptionActivity extends AppCompatActivity {
 
 
         expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
-        expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle, expandableListDetail);
+        expandableListAdapter = new CustomExpandableListAdapter(this, expandableListTitle,groupImages, expandableListDetail,childImages);
         expandableListView.setAdapter(expandableListAdapter);
 
         expandableListView.setOnGroupExpandListener( groupPosition -> Toast.makeText(getApplicationContext(),
@@ -233,7 +237,39 @@ public class HotelDescriptionActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("UseSparseArrays")
+    private void prepareListData(){
+        groupImages = new ArrayList <Integer>(  );
+        groupImages.add( R.drawable.ic_leaf );
+        groupImages.add( R.drawable.ic_review );
+        groupImages.add( R.drawable.ic_contacts_book );
+
+        childImages = new HashMap <Integer, List<Integer>>(  );
+
+        List<Integer> ipeImages = new ArrayList <Integer>(  );
+        ipeImages.add( R.drawable.ic_fleur );
+        ipeImages.add( R.drawable.ic_fleur);
+        ipeImages.add( R.drawable.ic_fleur );
+        ipeImages.add( R.drawable.ic_fleur );
+
+        List<Integer> qualiteImages = new ArrayList <Integer>(  );
+        qualiteImages.add( R.drawable.ic_fleur );
+        qualiteImages.add( R.drawable.ic_fleur );
+
+        List<Integer> contactImages = new ArrayList <Integer>(  );
+        contactImages.add( R.drawable.ic_fleur );
+        contactImages.add( R.drawable.ic_fleur );
+        contactImages.add( R.drawable.ic_fleur );
+        contactImages.add( R.drawable.ic_fleur );
+
+        childImages.put(0,ipeImages);
+        childImages.put(1,qualiteImages);
+        childImages.put(2,contactImages);
+
+    }
+
     public HashMap<String, List<String>> getData() {
+
         String energie,dechets,salaire,communaute,tel,mail,site,booking,tripadvisor,adresse,ipe;
 
             energie = getIntent().getExtras().getString( "energie" );
