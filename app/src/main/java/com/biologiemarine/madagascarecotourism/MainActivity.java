@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     FloatingActionMenu materialDesignFAM;
     FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
-    private LocationListeningCallback callback = new LocationListeningCallback(this);
+    private final LocationListeningCallback callback = new LocationListeningCallback(this);
     private Button privacy;
     private EditText PPScrollV;
     private ImageButton PPClose;

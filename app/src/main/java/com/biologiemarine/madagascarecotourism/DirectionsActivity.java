@@ -96,7 +96,7 @@ public class DirectionsActivity extends AppCompatActivity {
         client.enqueueCall(new Callback<DirectionsResponse>() {
             @Override
             public void onResponse(Call<DirectionsResponse> call, Response<DirectionsResponse> response) {
-                System.out.println(call.request().url().toString());
+                System.out.println(call.request().url());
 
                 // You can get the generic HTTP info about the response
                 Timber.tag(TAG).d("Response code: %s", response.code());

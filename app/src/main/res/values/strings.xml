@@ -21,7 +21,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="acces_token">pk.eyJ1IjoibmF0aGFucHVvenpvIiwiYSI6ImNqbms4aGhnajEzeGQzcW8zamszNDdhM2wifQ.CN78uGunuSV16TT71FhXmA</string>
+    <string name="acces_token">pk.eyJ1IjoibmF0aGFucHVvenpvIiwiYSI6ImNtNXBleHZ3NzAwbGYycXIydzVyYmh2b3cifQ.rdWIyGd-kwSmFvDbaqlgqA</string>
     <string name="directions_activity_marker_options_origin_title">origin</string>
     <string name="directions_activity_marker_options_origin_snippet">Origin</string>
     <string name="directions_activity_marker_options_destination_title">destination</string>

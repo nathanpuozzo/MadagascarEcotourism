@@ -5,7 +5,7 @@ android {
     defaultConfig {
         namespace "com.biologiemarine.madagascarecotourism"
         applicationId "com.biologiemarine.madagascarecotourism"
-        minSdkVersion 16
+        minSdkVersion 21
         compileSdk 33
         versionCode 19
         versionName "1.2"
@@ -24,15 +24,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     compileSdk 34
    // buildToolsVersion '34.0.0'
     ndkVersion '24.0.7956693 rc2'
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.3.2"
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.android.gms:play-services-maps:19.0.0'
-    implementation 'com.google.android.material.appbar.AppBarLayout:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
     implementation 'junit:junit:4.13.2'
     implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
@@ -71,16 +78,13 @@ dependencies {
 
 
     //MapBox
+
     implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1') {
         transitive = true
     }
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:5.8.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation:0.3.0'
 
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:0.42.6'
-    implementation('com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6') {
-        transitive = true
-    }
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-core:5.8.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-geojson:5.8.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:5.8.0'
