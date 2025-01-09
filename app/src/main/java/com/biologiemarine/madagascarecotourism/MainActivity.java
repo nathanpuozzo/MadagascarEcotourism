@@ -38,11 +38,10 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.location.Location;
+import android.location.LocationListener;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -50,11 +49,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.biologiemarine.madagascarecotourism.Adapter.CustomHotelAdapter;
 import com.biologiemarine.madagascarecotourism.Models.ContactPOJO;
@@ -64,9 +65,10 @@ import com.github.clans.fab.FloatingActionMenu;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.mapbox.android.core.location.LocationEngine;
-import com.mapbox.android.core.location.LocationEngineListener;
-import com.mapbox.android.core.location.LocationEnginePriority;
+import com.mapbox.android.core.location.LocationEngineCallback;
 import com.mapbox.android.core.location.LocationEngineProvider;
+import com.mapbox.android.core.location.LocationEngineRequest;
+import com.mapbox.android.core.location.LocationEngineResult;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.geojson.Feature;
@@ -79,12 +81,13 @@ import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.location.LocationComponent;
+import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions;
 import com.mapbox.mapboxsdk.location.OnLocationClickListener;
+import com.mapbox.mapboxsdk.location.modes.CameraMode;
 import com.mapbox.mapboxsdk.location.modes.RenderMode;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
-import com.mapbox.mapboxsdk.plugins.locationlayer.modes.CameraMode;
 import com.mapbox.mapboxsdk.style.expressions.Expression;
 import com.mapbox.mapboxsdk.style.layers.CircleLayer;
 import com.mapbox.mapboxsdk.style.layers.Layer;
@@ -104,13 +107,14 @@ import timber.log.Timber;
 
 // classes needed to add location layer
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,LocationEngineListener,PermissionsListener,
+
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, LocationListener,PermissionsListener,
         OnLocationClickListener, MapboxMap.OnMapClickListener {
 
 
     FloatingActionMenu materialDesignFAM;
     FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
-
+    private LocationListeningCallback callback = new LocationListeningCallback(this);
     private Button privacy;
     private EditText PPScrollV;
     private ImageButton PPClose;
@@ -123,6 +127,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private CustomHotelAdapter hotelAdapter;
     private CustomHotelAdapter areaAdapter;
+
 
     private MapView mapView;
     private MapboxMap map;
@@ -284,10 +289,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         new LoadGeoJsonDataTask( this ).execute();
 
         VectorSource vectorSource = new VectorSource( AREA_LAYER_ID, "mapbox://nathanpuozzo.8j95651c" );
-        map.addSource( vectorSource );
+        map.getStyle().addSource(vectorSource);
 
         Source guideSource = new GeoJsonSource( GUIDE_LAYER_ID,"mapbox://nathanpuozzo.2zrilie4" );
-        map.addSource( guideSource );
+        map.getStyle().addSource( guideSource );
 
         map.addOnMapClickListener( this );
         //aires protégées afficher/masquer
@@ -304,7 +309,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
     @Override
-    public void onMapClick(@NonNull LatLng point) {
+    public boolean onMapClick(@NonNull LatLng point) {
         if(featureMarker!=null){
             map.removeMarker( featureMarker );
         }
@@ -412,6 +417,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             return true;
         } );
 
+        return false;
     }
 
 
@@ -515,7 +521,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     private void setupSource() {
         source = new GeoJsonSource( geojsonSourceId, featureCollection );
-        map.addSource( source );
+        map.getStyle().addSource(source );
     }
 
     /**
@@ -523,7 +529,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     private void setUpImage() {
         Bitmap icon = BitmapFactory.decodeResource( this.getResources(), R.drawable.ic_hotel_icon );
-        map.addImage( MARKER_IMAGE_ID, icon );
+        map.getStyle().addImage(MARKER_IMAGE_ID, icon );
 
     }
 
@@ -539,7 +545,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      * Setup a layer with maki icons, eg. west coast city.
      */
     private void setUpMarkerLayer() {
-        map.addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false )));
+        map.getStyle().addLayer( new SymbolLayer( MARKER_LAYER_ID, geojsonSourceId ).withProperties( iconImage( MARKER_IMAGE_ID ), iconAllowOverlap( false )));
     }
 
     /**
@@ -563,7 +569,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     lt(pointCount, literal(layers[i-1][0]))
                     )
             );
-            map.addLayer (clusterLayer);
+            map.getStyle().addLayer (clusterLayer);
 
         }
         //Add the count labels
@@ -573,7 +579,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 textColor( Color.WHITE ),
                 textIgnorePlacement( true ),
                 textAllowOverlap( false ));
-        map.addLayer( count);
+        map.getStyle().addLayer( count);
 
     }
 
@@ -585,7 +591,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      * </p>
      */
     private void setUpInfoWindowLayer() {
-        map.addLayer(new SymbolLayer(CALLOUT_LAYER_ID, geojsonSourceId)
+        map.getStyle().addLayer(new SymbolLayer(CALLOUT_LAYER_ID, geojsonSourceId)
                 .withProperties(
                         /* show image with id title based on the value of the name feature property */
                         iconImage("{hotel}"),
@@ -685,7 +691,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void setImageGenResults(HashMap<String, View> viewMap, HashMap<String, Bitmap> imageMap) {
         if (map != null) {
 // calling addImages is faster as separate addImage calls for each bitmap.
-            map.addImages(imageMap);
+            map.getStyle().addImages(imageMap);
         }
 // need to store reference to views to be able to use them as hitboxes for click events.
         this.viewMap = viewMap;
@@ -744,10 +750,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 byte[] buffer = new byte[size];
                 is.read(buffer);
                 is.close();
-                return new String(buffer, StandardCharsets.UTF_8);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    return new String(buffer, StandardCharsets.UTF_8);
+                }
             } catch (Exception exception) {
                 throw new RuntimeException(exception);
             }
+            return filename;
         }
 
     }
@@ -842,19 +851,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     activity.refreshSource();
                 }
             }
-            Toast.makeText(activity, R.string.mapbox_mapActionDescription, Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, com.mapbox.mapboxsdk.R.string.mapbox_mapActionDescription, Toast.LENGTH_SHORT).show();
 
         }
     }
 
 
 
-    /**
-     * Utility class to generate Bitmaps for Symbol.
-     * <p>
-     * Bitmaps can be added to the map with {@link MapboxMap#addImage(String, Bitmap)}
-     * </p>
-     */
+
     private static class SymbolGenerator {
     /**
      * Generate a Bitmap from an Android SDK View.
@@ -890,7 +894,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @SuppressLint("WrongConstant")
     private void initializeLocationLayer() {
         locationComponent = map.getLocationComponent();
-        locationComponent.activateLocationComponent( this,locationEngine);
+        locationComponent.activateLocationComponent(LocationComponentActivationOptions.builder(this,map.getStyle()).build());
         locationComponent.setLocationComponentEnabled(true);
         locationComponent.addOnLocationClickListener(this);
         locationComponent.setCameraMode(CameraMode.TRACKING_GPS);
@@ -899,17 +903,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @SuppressWarnings("MissingPermission")
     private void initializeLocationEngine() {
-        locationEngine = new LocationEngineProvider(this).obtainBestLocationEngineAvailable();
-        locationEngine.setPriority( LocationEnginePriority.HIGH_ACCURACY );
-        locationEngine.activate();
+        long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
+        long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 5;
+        locationEngine = LocationEngineProvider.getBestLocationEngine(this);
+        LocationEngineRequest request = new LocationEngineRequest.Builder(DEFAULT_INTERVAL_IN_MILLISECONDS)
+                .setPriority(LocationEngineRequest.PRIORITY_NO_POWER)
+                .setMaxWaitTime(DEFAULT_MAX_WAIT_TIME)
+                .build();
 
-        Location lastLocation = locationEngine.getLastLocation();
-        if(lastLocation != null){
-            originLocation = lastLocation;
-            setCameraPosition( lastLocation );
-        }else{
-            locationEngine.addLocationEngineListener( this );
-        }
+        locationEngine.requestLocationUpdates(request, callback, getMainLooper());
+        locationEngine.getLastLocation(callback);
     }
 
     private void setCameraPosition(Location lastLocation) {
@@ -921,7 +924,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void toggleLayer() {
 
 
-        Layer layer = map.getLayer(AREA_LAYER_ID);
+        Layer layer = map.getStyle().getLayer(AREA_LAYER_ID);
         if (layer != null) {
             if (VISIBLE.equals(layer.getVisibility().getValue())) {
                 layer.setProperties(visibility(NONE));
@@ -989,7 +992,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onDestroy(){
         super.onDestroy();
         if(locationEngine != null){
-            locationEngine.deactivate();
+        //    locationEngine.deactivate();
         }
         if (map != null) {
             map.removeOnMapClickListener(this);
@@ -1026,12 +1029,36 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
 
-    @SuppressWarnings( "MissingPermission" )
-    @Override
-    public void onConnected() {
-        locationEngine.requestLocationUpdates();
+
+
+    private static class LocationListeningCallback
+            implements LocationEngineCallback<LocationEngineResult> {
+
+        private final WeakReference<MainActivity> activityWeakReference;
+
+        LocationListeningCallback(MainActivity activity) {
+            this.activityWeakReference = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void onSuccess(LocationEngineResult result) {
+
+            // The LocationEngineCallback interface's method which fires when the device's location has changed.
+
+
+            Location lastLocation = result.getLastLocation();
+
+
+        }
+
+        @Override
+        public void onFailure(@NonNull Exception exception) {
+
+            // The LocationEngineCallback interface's method which fires when the device's location can not be captured
+
+
+
+        }
     }
-
-
 
 }

@@ -4,11 +4,10 @@ import static com.mapbox.core.constants.Constants.PRECISION_6;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.biologiemarine.madagascarecotourism.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.mapbox.api.directions.v5.DirectionsCriteria;
 import com.mapbox.api.directions.v5.MapboxDirections;
 import com.mapbox.api.directions.v5.models.DirectionsResponse;
@@ -171,7 +170,7 @@ public class DirectionsActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
+       super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
     }
 

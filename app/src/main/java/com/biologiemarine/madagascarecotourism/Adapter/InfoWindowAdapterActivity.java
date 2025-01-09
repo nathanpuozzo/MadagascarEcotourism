@@ -2,10 +2,11 @@ package com.biologiemarine.madagascarecotourism.Adapter;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.biologiemarine.madagascarecotourism.Models.annotations.CityStateMarker;
 import com.biologiemarine.madagascarecotourism.utils.IconUtils;
@@ -16,8 +17,6 @@ import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
-
-import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 
 
 public class InfoWindowAdapterActivity extends AppCompatActivity {
@@ -90,13 +89,13 @@ public class InfoWindowAdapterActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        mapView.onResume();
+        super.onResume();
         mapView.onResume();
     }
 
     @Override
     protected void onPause() {
-        mapView.onPause();
+        super.onPause();
         mapView.onPause();
     }
 

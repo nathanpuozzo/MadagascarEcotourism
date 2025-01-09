@@ -43,7 +43,11 @@ public class HotelListActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.hotel_layout );
 
-        //TODO: Research bar
+        //
+        //
+        //
+        //
+        // TODO: Research bar
         /*
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
