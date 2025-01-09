@@ -76,11 +76,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_cross"
-        android:tint="#FFFFFF"
         android:layout_gravity="top|right"
         android:layout_margin="60dp"
         android:background="#00FFFFFF"
-        />
+        fab:tint="#FFFFFF" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/material_design_android_floating_action_menu"

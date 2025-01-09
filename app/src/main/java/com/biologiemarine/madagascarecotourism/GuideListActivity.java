@@ -5,9 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
@@ -57,7 +57,7 @@ public class GuideListActivity extends AppCompatActivity {
         button.setOnClickListener( v -> finish() );
 
         //ProgressCircle for images
-        progressBar = findViewById( R.id.ProgressCircle );
+        progressBar = findViewById( R.id.toolbar );
 
         //RecyclerView
         mRecyclerView = findViewById( R.id.recyclerView );

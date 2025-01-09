@@ -2,11 +2,11 @@ package com.biologiemarine.madagascarecotourism;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,7 +50,7 @@ public class AireListActivity extends AppCompatActivity {
         button.setOnClickListener( v -> finish() );
 
         //ProgressCircle for images
-        progressBar = findViewById( R.id.ProgressCircleAire );
+        progressBar = findViewById( R.id.toolbar);
 
         //RecyclerView
         mRecyclerView = findViewById( R.id.recyclerViewAire );
