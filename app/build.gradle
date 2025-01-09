@@ -66,7 +66,7 @@ dependencies {
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
     //AppIntro
-    implementation 'com.github.apl-devs:appintro:v4.2.3'
+   // implementation 'com.github.apl-devs:appintro:v4.2.3'
 
     //FAB Menu
     implementation 'com.github.clans:fab:1.6.4'
@@ -79,15 +79,8 @@ dependencies {
 
     //MapBox
 
-    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1') {
-        transitive = true
-    }
-    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:5.8.0'
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation:0.3.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1'
 
-    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-core:5.8.0'
-    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-geojson:5.8.0'
-    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:5.8.0'
     implementation 'com.cocoahero.android:geojson:1.0.1@jar'
 
 
