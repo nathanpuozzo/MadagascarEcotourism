@@ -72,7 +72,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
                 else if (expandedListPosition == 3){expandedListImageView.setImageResource(R.drawable.ic_www);}
                 break;
             default :
-                expandedListImageView.setImageResource(R.drawable.googleg_disabled_color_18);
+                expandedListImageView.setImageResource(com.mapbox.maps.R.drawable.googleg_disabled_color_18);
                 break;
         }
 

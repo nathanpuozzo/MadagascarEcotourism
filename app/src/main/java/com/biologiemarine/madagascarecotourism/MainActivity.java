@@ -53,6 +53,10 @@ import com.mapbox.geojson.FeatureCollection;
 import com.mapbox.geojson.Point;
 import com.mapbox.maps.MapView;
 import com.mapbox.maps.MapboxMap;
+import com.mapbox.maps.CameraOptions
+import com.mapbox.maps.extension.style.expressions.generated.Expression;
+import com.mapbox.maps.extension.style.layers.generated.CircleLayer;
+import com.mapbox.maps.extension.style.layers.generated.SymbolLayer;
 import com.mapbox.maps.extension.style.sources.generated.GeoJsonSource;
 
 import java.io.InputStream;
@@ -165,19 +169,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             startActivity( intent );
         }
 
-
-        //Ordre des déclarations!!!
-
-        Mapbox.getInstance( this, "pk.eyJ1IjoibmF0aGFucHVvenpvIiwiYSI6ImNqbms4aGhnajEzeGQzcW8zamszNDdhM2wifQ.CN78uGunuSV16TT71FhXmA" );
-
         setContentView( R.layout.activity_main );
         mapView = findViewById( R.id.mapView );
 
         //button hide/show aires protégées
         hideShow = findViewById( R.id.hideShow );
 
-        mapView.onCreate( savedInstanceState );
-        mapView.getMapAsync( this );
+
 
         //bouttons floating action menu (FAM)
         materialDesignFAM = findViewById( R.id.material_design_android_floating_action_menu );
